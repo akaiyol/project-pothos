@@ -1,6 +1,6 @@
 # Project Skills
 
-This file records the agent skills intentionally installed for this iOS app. Skills are project-scoped under `.agents/skills/` and should be added only when the product or implementation needs them.
+This file records the agent skills intentionally installed for Project Pothos during earlier iOS exploration. Skills are project-scoped under the repository-root `.agents/skills/` and should be added only when the product or implementation needs them.
 
 ## Source snapshot
 

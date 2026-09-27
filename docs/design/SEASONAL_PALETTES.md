@@ -7,7 +7,7 @@
 - Last updated: 2026-09-27
 - Status: two-anchor proposal; colors and selector rendering are not final
 - Related exploration: [MOOD_INPUT.md](MOOD_INPUT.md)
-- Daily selection feature: [FEATURE_DAILY_COLOR_SELECTION.md](FEATURE_DAILY_COLOR_SELECTION.md)
+- Daily selection feature: [../features/FEATURE_DAILY_COLOR_SELECTION.md](../features/FEATURE_DAILY_COLOR_SELECTION.md)
 
 ## Current Interface Revision — 2026-09-27
 

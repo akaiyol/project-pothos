@@ -9,8 +9,8 @@
 - Parent document: [APP_DESIGN.md](APP_DESIGN.md)
 - Format exploration: [DIARY_FORMATS.md](DIARY_FORMATS.md)
 - Daily landing exploration: [DAILY_LANDING.md](DAILY_LANDING.md)
-- Diary history grid: [FEATURE_DIARY_HISTORY_GRID.md](FEATURE_DIARY_HISTORY_GRID.md)
-- Daily color selection: [FEATURE_DAILY_COLOR_SELECTION.md](FEATURE_DAILY_COLOR_SELECTION.md)
+- Diary history grid: [../features/FEATURE_DIARY_HISTORY_GRID.md](../features/FEATURE_DIARY_HISTORY_GRID.md)
+- Daily color selection: [../features/FEATURE_DAILY_COLOR_SELECTION.md](../features/FEATURE_DAILY_COLOR_SELECTION.md)
 
 ## Current V1 Interface Direction — 2026-09-19
 

@@ -6,10 +6,10 @@
 - Stage: feature definition before visual prototyping
 - Last updated: 2026-09-27
 - Status: mapping model proposed; selector form and save behavior remain unresolved
-- Parent specification: [DAILY_DIARY.md](DAILY_DIARY.md)
-- Seasonal colors: [SEASONAL_PALETTES.md](SEASONAL_PALETTES.md)
+- Parent specification: [../design/DAILY_DIARY.md](../design/DAILY_DIARY.md)
+- Seasonal colors: [../design/SEASONAL_PALETTES.md](../design/SEASONAL_PALETTES.md)
 - History output: [FEATURE_DIARY_HISTORY_GRID.md](FEATURE_DIARY_HISTORY_GRID.md)
-- Earlier exploration: [MOOD_INPUT.md](MOOD_INPUT.md)
+- Earlier exploration: [../design/MOOD_INPUT.md](../design/MOOD_INPUT.md)
 
 ## Problem and User Value
 

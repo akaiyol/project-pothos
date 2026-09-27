@@ -157,4 +157,12 @@ If the rendered result does not match the acceptance checklist, do not present i
 
 ## README and work log
 
-Follow README_GUIDELINES.md for public presentation. Keep the approved introduction fixed unless the user explicitly requests changing it. Propose public snapshot updates when meaningful, verified work is ready to share, and obtain the user’s permission before making them. Show at most two features, ranked by interest and design quality; replace a feature only with a stronger candidate and user approval. Record progress, direction changes, and unresolved choices in WORK_LOG.md, not the README. Non-sensitive project documents, guidelines, work logs, and project-scoped skills belong in the repository. Keep credentials, private personal material, and machine-local state excluded. Review staged content for sensitive material before publication.
+Follow docs/process/README_GUIDELINES.md for public presentation. Keep the approved introduction fixed unless the user explicitly requests changing it. Propose public snapshot updates when meaningful, verified work is ready to share, and obtain the user’s permission before making them. Show at most two features, ranked by interest and design quality; replace a feature only with a stronger candidate and user approval. Record progress, direction changes, and unresolved choices in docs/WORK_LOG.md, not the README. Non-sensitive project documents, guidelines, work logs, and project-scoped skills belong in the repository. Keep credentials, private personal material, and machine-local state excluded. Review staged content for sensitive material before publication.
+
+## Repository organization
+
+Use docs/README.md as the documentation index. Keep design documents in docs/design/, feature briefs in docs/features/, editorial and tool guidance in docs/process/, and progress in docs/WORK_LOG.md. Keep README.md and AGENTS.md at the root, and project skills in .agents/skills/ for discovery. Preserve relative links when moving files. Introduce production source and test directories only when implementation is explicitly authorized and the platform is selected.
+
+## Small changes and publishing
+
+After completing and checking small, scoped changes, commit and push them to the configured GitHub remote without asking for confirmation again. This is standing user authorization for routine small changes. Review the exact diff for sensitive content and preserve unrelated work. Existing requirements for user permission before changing README content still apply; once that edit is authorized, its routine commit and push need no separate approval. Do not force-push or publish credentials or private material.

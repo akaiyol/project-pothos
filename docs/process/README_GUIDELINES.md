@@ -38,12 +38,12 @@ More to come.
 - When a worthwhile snapshot emerges, propose the exact image, short description, and any replacement to the owner. Obtain permission before changing the public README feature selection or copy.
 - An explicit request to update the README authorizes that requested edit; it does not authorize future updates or publishing.
 - Preserve the introduction during feature updates. Do not silently rewrite it for a new scope.
-- Record routine progress, direction changes, alternatives, and proposed README candidates in WORK_LOG.md without turning them into public copy.
+- Record routine progress, direction changes, alternatives, and proposed README candidates in ../WORK_LOG.md without turning them into public copy.
 
 ## Images and publication
 
-- Use actual rendered screenshots of the feature. Follow AGENTS.md visual verification requirements for mockups and report any incomplete verification.
-- Use repository-relative image paths and useful alt text. Keep approved public exports in assets/.
+- Use actual rendered screenshots of the feature. Follow ../../AGENTS.md visual verification requirements for mockups and report any incomplete verification.
+- Use repository-relative image paths and useful alt text. Keep approved public exports in the repository’s assets/ directory.
 - Review images for private content and metadata, and review staged files and diffs before publishing.
 - Keep credentials, personal originals, local absolute paths, out of public content. Non-sensitive working documents belong in the repository, separate from the visitor-facing README.
 - Commit these guidelines and the non-sensitive work log so they accompany a clone. Gitignore does not protect arbitrary content or remove already tracked files.

@@ -6,9 +6,9 @@
 - Stage: feature definition and visual prototype
 - Last updated: 2026-09-27
 - Status: accepted design snapshot; element removal and visible date range remain open
-- Related daily specification: [DAILY_DIARY.md](DAILY_DIARY.md)
+- Related daily specification: [../design/DAILY_DIARY.md](../design/DAILY_DIARY.md)
 - Daily color selection: [FEATURE_DAILY_COLOR_SELECTION.md](FEATURE_DAILY_COLOR_SELECTION.md)
-- Seasonal colors: [SEASONAL_PALETTES.md](SEASONAL_PALETTES.md)
+- Seasonal colors: [../design/SEASONAL_PALETTES.md](../design/SEASONAL_PALETTES.md)
 
 ## Accepted Snapshot — 2026-09-27
 

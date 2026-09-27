@@ -48,7 +48,7 @@ Review the README voice and introduction before publishing the first snapshot.
 
 ## 2026-09-27 — Owner copy and README formatting
 
-- Preserved the owner's new introduction verbatim and synchronized the fixed introduction in README_GUIDELINES.md.
+- Preserved the owner's new introduction verbatim and synchronized the fixed introduction in process/README_GUIDELINES.md.
 - Added spacing below the title, italicized the definition, and made Feature highlight a section heading above the feature title.
 - Checked screenshot status: assets/ contains no image and the README has no image reference. Screenshot publication remains pending; nothing was pushed.
 
@@ -66,3 +66,16 @@ Review the README voice and introduction before publishing the first snapshot.
 - Retained exclusions for credentials, private source material, machine-local settings, dependencies, and generated build output.
 - Reviewed content for credential patterns and local paths; flagged skill references were explanatory security examples rather than secrets.
 - The history-grid screenshot still does not exist in the project and is not part of this publication.
+
+## 2026-09-27 — Repository organization
+
+- Grouped design studies, feature briefs, and process guidance into docs/design/, docs/features/, and docs/process/. Moved the work log to docs/WORK_LOG.md.
+- Added docs/README.md as the contributor index and updated document references.
+- Preserved the public README and kept AGENTS.md and .agents/skills/ at discovery-compatible locations.
+- No production scaffold or platform commitment was introduced.
+- Verified local Markdown links after the moves.
+
+## 2026-09-27 — Routine small-change publishing
+
+- Owner requested that small changes always be pushed after completion and verification. Recorded this standing instruction in AGENTS.md.
+- Prepared the documentation reorganization and publishing rule for commit and push. README content approval rules remain unchanged.
