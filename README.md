@@ -10,4 +10,6 @@ More to come.
 
 ### A history in colour
 
+![Diary history grid with daily colour squares arranged by week from April to October.](assets/history-grid.png)
+
 A diary-grid study: one square for each day, holding its chosen colour. A little patchwork of days to look back on.

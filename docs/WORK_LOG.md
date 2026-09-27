@@ -79,3 +79,11 @@ Review the README voice and introduction before publishing the first snapshot.
 
 - Owner requested that small changes always be pushed after completion and verification. Recorded this standing instruction in AGENTS.md.
 - Prepared the documentation reorganization and publishing rule for commit and push. README content approval rules remain unchanged.
+
+## 2026-09-27 — README history-grid screenshot
+
+- Captured the existing history-grid prototype using sample data and added assets/history-grid.png.
+- Linked the image beneath the README feature title without changing the introduction or feature description.
+- Inspected all 12 captures: long and short date ranges at 320, 390, and 430 points with light and dark host backgrounds. The exported image uses the long April–October view.
+- The standalone snapshot has no visible interactive controls; no product interaction behavior was changed.
+- Checked the PNG and relative image path before publication.
