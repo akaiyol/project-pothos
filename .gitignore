@@ -14,24 +14,11 @@
 credentials.json
 *service-account*.json
 
-# Private material and local working documents
+# Private material and machine-local state
 private/
 personal/
 raw-media/
 .local/
-WORK_LOG.md
-README_GUIDELINES.md
-AGENTS.md
-SKILLS.md
-APP_DESIGN.md
-DAILY_DIARY.md
-DAILY_LANDING.md
-DIARY_FORMATS.md
-FEATURE_*.md
-IDEAS.md
-MOOD_INPUT.md
-SEASONAL_PALETTES.md
-.agents/
 .codex/
 .claude/
 
