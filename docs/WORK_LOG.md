@@ -87,3 +87,26 @@ Review the README voice and introduction before publishing the first snapshot.
 - Inspected all 12 captures: long and short date ranges at 320, 390, and 430 points with light and dark host backgrounds. The exported image uses the long April–October view.
 - The standalone snapshot has no visible interactive controls; no product interaction behavior was changed.
 - Checked the PNG and relative image path before publication.
+
+## 2026-09-29 — Agent skill and plugin audit
+
+### Work completed
+
+- Audited the latest available snapshots of `openai/plugins`, `anthropics/skills`, `anthropics/claude-code`, and `dpearson2699/swift-ios-skills` against the app's design and implementation needs.
+- Confirmed that the installed Swift/iOS source is still at the latest inspected upstream commit; no existing skill required replacement.
+- Added six missing Swift/iOS foundations: architecture, concurrency, navigation, gestures, performance, and simulator workflows.
+- Added Anthropic's `frontend-design` skill for subject-specific visual direction and anti-template critique.
+- Added third-party source, revision, and license notices.
+
+### Plugin findings
+
+- `build-ios-apps` is the most valuable Codex code plugin once the Xcode project exists because it adds simulator, build, debug, performance, and leak tooling through XcodeBuildMCP.
+- Figma is the most useful optional design integration when editable files or collaborative handoff become necessary.
+- Claude Code's `feature-dev` duplicates the repository's feature-brief workflow; its review and security plugins are deferred until production code exists.
+- No plugin was installed or connected during this audit.
+
+### Verification and publication
+
+- Verified every added skill has a readable `SKILL.md` and that no added skill contains executable files.
+- Kept the public README unchanged.
+- The unfinished daily color-selector prototype remains outside this audit's publication scope.
