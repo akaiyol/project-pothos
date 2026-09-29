@@ -39,11 +39,19 @@ All skills are installed at project scope. The original ten Swift/iOS skills wer
 | --- | --- | --- |
 | [openai/skills](https://github.com/openai/skills) | The repository is deprecated and redirects current Codex skill and plugin examples to `openai/plugins`. | Do not add new project skills from the deprecated catalog. |
 | [openai/plugins](https://github.com/openai/plugins), commit [`5fd93af`](https://github.com/openai/plugins/commit/5fd93af4cd0c623e020d0cc7e9ce178b4ac1f70f) | `build-ios-apps` is directly useful once an Xcode project exists because it adds XcodeBuildMCP-backed build, simulator, profiling, leak, and debugging workflows. Its overlapping SwiftUI reference skills are narrower than the current standalone Swift set. | Recommend the complete plugin at implementation time; do not detach or duplicate its overlapping skills now. |
-| [openai/plugins](https://github.com/openai/plugins), same snapshot | Figma is useful when Project Pothos needs editable design files, collaboration, and design-to-SwiftUI handoff. `superpowers` substantially duplicates the repository's required feature and verification workflow. | Recommend Figma as an optional design integration; do not add `superpowers`. |
+| [openai/plugins](https://github.com/openai/plugins), same snapshot | Figma is useful when Project Pothos needs editable design files, collaboration, and design-to-SwiftUI handoff. `superpowers` substantially duplicates the repository's required feature and verification workflow. | Use the connected Figma plugin for approved design-file work; do not add `superpowers`. |
 | [anthropics/skills](https://github.com/anthropics/skills), commit [`8a1541c`](https://github.com/anthropics/skills/commit/8a1541c4a3ffa5a20a5a91de0dcf3f0bab1d1ef4) | `frontend-design` adds a strong anti-generic design critique that complements the project rules. `doc-coauthoring` duplicates the feature-brief workflow. `algorithmic-art` and `canvas-design` are tied to web/static-art artifact workflows rather than native iOS rendering. | Install only `frontend-design`. |
 | [anthropics/claude-code](https://github.com/anthropics/claude-code), commit [`684800b`](https://github.com/anthropics/claude-code/commit/684800b206824dfd0cc8a876e8604b20f72c3617) | The `frontend-design` plugin contains the same skill already installed from `anthropics/skills`. `feature-dev` duplicates the repository's brief-first workflow. Code-review and security plugins become useful after production code and pull requests exist; security guidance also sends diffs to a configured model endpoint. | Do not install a Claude Code plugin now. Re-evaluate review tooling after the production project exists. |
 
 No installed skill was replaced. The existing Swift skills match the latest inspected upstream commit and remain the stronger standalone source for the areas they cover.
+
+## Connected design tooling
+
+| Tool | Project role | Boundary |
+| --- | --- | --- |
+| Figma plugin | Creates and edits approved Figma design files, supports design-system work, and provides SwiftUI handoff workflows. | Use only when a task calls for Figma output or design-to-code translation. Keep product decisions and feature briefs in the repository as the source of truth. |
+
+Figma's plugin-provided skills remain managed by the plugin and are not copied into `.agents/skills/`.
 
 ## Selection policy
 
@@ -63,7 +71,6 @@ These areas may justify additional skills or plugins after the app's deployment 
 - App Store review and release readiness
 - CloudKit synchronization
 - Core ML implementation if the chosen model path requires it
-- Figma collaboration and design handoff
 - XcodeBuildMCP workflows through the complete `build-ios-apps` plugin
 
 ## Change log
@@ -72,3 +79,4 @@ These areas may justify additional skills or plugins after the app's deployment 
 | --- | --- |
 | 2026-09-12 | Added the initial ten Swift/iOS skills from `swift-ios-skills` version 3.9.1. |
 | 2026-09-29 | Audited current OpenAI, Anthropic, Claude Code, and Swift iOS sources. Added six missing Swift/iOS foundations and Anthropic's `frontend-design`; retained all existing skills and deferred plugin installation. |
+| 2026-09-29 | Connected the Figma plugin for optional design-file creation, design-system work, and SwiftUI handoff. Kept its managed skills separate from the project-scoped skill set. |

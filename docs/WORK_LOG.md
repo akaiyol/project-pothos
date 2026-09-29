@@ -110,3 +110,11 @@ Review the README voice and introduction before publishing the first snapshot.
 - Verified every added skill has a readable `SKILL.md` and that no added skill contains executable files.
 - Kept the public README unchanged.
 - The unfinished daily color-selector prototype remains outside this audit's publication scope.
+
+## 2026-09-29 — Figma design integration
+
+- Connected the Figma plugin after the skill and plugin audit.
+- Recorded its scope as optional design-file creation, design-system work, and SwiftUI handoff.
+- Kept Figma's plugin-managed skills out of `.agents/skills/` to avoid duplicating or vendoring externally managed tooling.
+- Preserved repository feature briefs and design decisions as the product source of truth.
+- No Figma file or production implementation was created.
