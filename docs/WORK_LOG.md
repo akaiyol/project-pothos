@@ -155,3 +155,12 @@ Review the README voice and introduction before publishing the first snapshot.
 - Interaction checks passed for tap, drag, note, disclosure, keyboard ranges, debounce, exact endpoint colour, single-day history updates, editing and reload. Native accessibility and real storage remain unverified and outside prototype scope.
 - Next action: incorporate owner feedback on this concrete daily-page revision; once accepted, record the chosen details and return to the screen/state map and release boundary before the Figma connected journey. Do not ask for another proceed prompt for already-authorized corrections.
 - Public README unchanged. Unrelated daily-colour brief edits preserved and excluded from this commit.
+
+## 2026-10-01 — Shade slider and connected top-history layout
+
+- Owner selected a gradient slider, moved diary history near the top, and authorized the remaining UI refinements. Updated the daily-page brief before revising the prototype. This supersedes the prior two-dimensional daily selector for this study.
+- Reordered the page to date → history → quotation → slider → writing → save status. Proposed July–September history to improve cell readability. Preserved the notebook, palette, placeholder and quotation.
+- Added one native range input with consistent gradient/thumb/saved-colour mapping and keyboard access. Removed coordinate controls and textarea resize chrome; notes expand with content.
+- Inspected 60 rendered captures across 320/390/430 points, both host appearances and ten states. Tests passed for click/drag/keyboard endpoints, one-day exact-colour updates, note growth, reload and overflow. Evidence: design/reviews/daily-slider-2026-10-01/REVIEW.md. Native assistive technology, physical touch and durable storage remain outside this verification.
+- Next action: incorporate owner feedback on the displayed slider/top-history composition. The three-month history range and save boundary remain decisions for review. After acceptance, return to the recorded screen/state map and release boundary before the connected Figma journey.
+- Public README unchanged; pre-existing daily-colour brief edits remain outside this revision's commit.

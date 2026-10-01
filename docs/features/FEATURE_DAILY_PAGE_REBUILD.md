@@ -4,6 +4,21 @@
 
 2026-10-01. User-authorized interactive design prototype, not production implementation. Replaces the rejected overlapping daily-page study. Preserve the accepted history-grid visual language and integrate it into a coherent daily notebook page.
 
+## Revision — 2026-10-01
+
+Owner requested a one-dimensional gradient slider, history near the top, and a more connected composition. This supersedes the earlier two-dimensional selector study. The revised hierarchy is date → compact history → quotation → shade slider → optional note → one save status.
+
+Acceptance checklist for this revision:
+
+- [x] One native shade slider has verified pointer and keyboard paths; visible thumb is neutral until the user chooses. Physical touch-device verification remains deferred.
+- [x] Gradient, thumb and saved day share the same one-dimensional colour mapping.
+- [x] History sits directly below the date; shorten the inline sample range to July–September to improve daily-cell readability. This range is a review proposal, not a production decision.
+- [x] Writing grows with content, has no resize handle, and remains close to the slider and save status.
+- [x] Inspect initial, note-only, saving, saved, edited, long-note, empty/sparse history and larger-text states at 320/390/430 points on both hosts.
+- [x] Only the sample day updates; exact colours, keyboard endpoints, reload reset, overflow and browser errors are checked.
+
+The existing autosave simulation, sample quotation, privacy boundary and white notebook treatment remain unchanged. The visible neutral thumb indicates an available control, not a selected or saved colour.
+
 ## Confirmed requirements
 
 - White notebook with softly curved edges and one red margin; no horizontal ruling.
@@ -16,23 +31,23 @@
 
 ## Proposed details for this review
 
-- Continuous selector only, using the history snapshot's autumn anchors. Other selector directions remain unresolved in their existing brief and are not selectable in this page study.
+- One-dimensional shade slider is owner-selected for this revision, using the existing autumn anchors. Earlier selector alternatives remain historical explorations.
 - No emotional prompt: a functional accessible field label introduces colour selection without inventing mood meanings.
 - Quiet autosave after a selection or edit settles; simulated in memory only. Reload resets the demo. This is not approval of production saving behavior.
-- A fixed sample date of 19 September 2026 aligns with the accepted April–October history snapshot; city omitted because optional.
-- Retain the long history range and fit its grid at every required width. Range remains a product decision.
+- A fixed sample date of 19 September 2026 carries forward the accepted history snapshot; city omitted because optional.
+- July–September inline history is proposed for readability; the final history range remains a product decision.
 
 ## Hierarchy and flow
 
-Date → short quotation → colour field → optional note → one save status → recent pages history. Initial state has no selection and an empty current-day cell. Tap or keyboard-select a colour; optionally write; after the debounce, only the current-day cell changes. Subsequent edits replace that day's data. History is a view, never a selector. No calendar navigation, new screen, animation, or page-turn metaphor is introduced.
+Date → recent history → short quotation → shade slider → optional note → one save status. Initial state has a neutral thumb, no selected colour, and an empty current-day cell. Tap, slide or keyboard-select a colour; optionally write; after the debounce, only the current-day cell changes. Subsequent edits replace that day's data. History is a view, never a selector. No calendar navigation, new screen, animation, or page-turn metaphor is introduced.
 
 ## Data and privacy
 
-Synthetic history and one draft contain a date, normalized coordinates, canonical RGB colour, and optional note. The gradient and saved colour use the same interpolation. Nothing is persisted or transmitted. No backend, analytics, model, or location permission is used. The demo notice is outside the product page.
+Synthetic history and one draft contain a date, a normalized slider position, canonical RGB colour, and optional note. The gradient and saved colour use the same interpolation. Nothing is persisted or transmitted. No backend, analytics, model, or location permission is used. The demo notice is outside the product page.
 
 ## States
 
-- Empty: no marker, neutral current-day cell, no saved claim.
+- Empty: neutral slider thumb, neutral current-day cell, no saved claim.
 - Partial: note without a colour remains a draft; history does not change.
 - Selected/saving: marker and one saving status; history retains its previous saved state until the timer completes.
 - Saved/edit: exact colour applied to the current date, one saved status; later edits update the same entry.
@@ -43,9 +58,9 @@ Synthetic history and one draft contain a date, normalized coordinates, canonica
 
 One column, natural page height, no fixed-position controls or clipping. Notebook remains white against light and dark hosts. At 320/390/430 points, month labels remain 12px and controls at least 14px; note uses 16px. Cells and gaps adapt to available width without horizontal scrolling.
 
-The field is a group with two range inputs as an equivalent input path, exposed through “Adjust colour” disclosure. Coordinates describe horizontal/vertical position, not emotions. All controls have 44px targets, visible focus, and screen-reader labels. Selection works with a tap or drag, and range keys support assistive input. History includes a textual summary and current-date saved state. No motion is required; larger text must reflow without overlap, with history retaining its week layout. Native Dynamic Type/VoiceOver validation is deferred until platform implementation.
+The native range input has a 44px target, visible keyboard focus, a descriptive label and selected-colour value text. Arrow, Home and End keys provide an equivalent selection path. The note grows naturally with content. History has a textual summary and current-date saved state. No motion is required. Native Dynamic Type and VoiceOver validation remain deferred until platform implementation.
 
-## Acceptance checklist
+## Previous revision checks (superseded; not evidence for this revision)
 
 - [x] Visually inspect initial, partial, selected/saving, saved, edited, expanded accessible controls, empty and sparse history at 320/390/430 and both host appearances.
 - [x] No overlap, clipped text, duplicate selector, decorative paper stack, or unbalanced blank region.
@@ -58,8 +73,8 @@ The field is a group with two range inputs as an equivalent input path, exposed 
 
 ## Open decisions
 
-Selector form, save boundary, history range and functional label wording remain proposals. Platform and production persistence remain unapproved. This rebuild does not settle seasonal emotional profiles or photograph matching.
+Save boundary, history range and functional label wording remain proposals. Platform and production persistence remain unapproved. This rebuild does not settle seasonal emotional profiles or photograph matching.
 
 ## Verification record
 
-See the [rendered review and evidence](../design/reviews/daily-page-2026-10-01/REVIEW.md). Checked the scoped HTML prototype, not production storage or native accessibility.
+Previous two-dimensional study: [archived review](../design/reviews/daily-page-2026-10-01/REVIEW.md). Current slider study: [rendered review and evidence](../design/reviews/daily-slider-2026-10-01/REVIEW.md). All 60 scoped renders and automated interaction checks passed; native accessibility and physical touch-device testing remain unverified.
