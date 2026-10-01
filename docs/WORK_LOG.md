@@ -135,3 +135,13 @@ Review the README voice and introduction before publishing the first snapshot.
 - Linked the decision record from the roadmap and documentation index. No daily-input requirements, production behavior, or public README content changed.
 - Checked documentation links and whitespace; no prototype or matching validation is claimed.
 - Next step: allow the owner to reflect before resolving the emotional input and fallback experience.
+
+## 2026-10-01 — Decision-driven design workflow
+
+- Owner requested a persistent workflow that advances after decisions without repeated proceed prompts.
+- Added docs/process/DESIGN_WORKFLOW.md and linked it from AGENTS.md, the documentation index, and the roadmap. The sequence is screen/state mapping, incremental Figma prototyping, connected review, then an explicitly authorized implementation slice after platform selection.
+- Defined decision gates, independent daily/seasonal progress, automatic follow-through, and a handoff containing the exact next action. Material product choices remain with the owner; routine authorized follow-through requires no renewed permission.
+- Current stage: workflow documented; screen/state map and Figma file have not been created. No visual verification is claimed for this documentation change.
+- Next action: prepare a proposed screen/state map and first-release boundary for review. After that review, update the relevant briefs and move the established daily pieces into Figma without another proceed prompt.
+- Pending owner judgment: release boundary and material journey choices surfaced by the map. Seasonal emotional input, output intent, and fallback remain unresolved and retain the owner's reflection pause.
+- Public README unchanged. Existing unrelated daily-colour brief edits are outside this change.

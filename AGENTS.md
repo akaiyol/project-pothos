@@ -18,6 +18,8 @@ Treat attached screenshots as visual references or evidence unless the user expl
 
 ## Required Feature Workflow
 
+Follow [docs/process/DESIGN_WORKFLOW.md](docs/process/DESIGN_WORKFLOW.md) for the screen-map → Figma prototype → authorized implementation sequence, decision gates, and automatic next steps. After the owner resolves a decision, record it and continue its already-authorized follow-through without another proceed prompt. Ask only for material unresolved decisions or missing authorization; preserve the existing production, README, and deferred-scope boundaries. At handoff, record the exact next action and dependencies in docs/WORK_LOG.md so the next session can resume directly.
+
 Every new design feature must follow this sequence. Do not begin implementation at step 2.
 
 ### Step 1: Feature brief

@@ -19,6 +19,7 @@
 
 ## Project workflow
 
+- [Design decisions and automatic next steps](process/DESIGN_WORKFLOW.md)
 - [Work log](WORK_LOG.md)
 - [README guidelines](process/README_GUIDELINES.md)
 - [Skill inventory](process/SKILLS.md)

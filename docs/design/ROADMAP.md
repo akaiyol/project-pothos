@@ -3,7 +3,7 @@
 ## Status and purpose
 
 - Updated: 2026-10-01
-- Status: proposed sequence for discussion; no delivery dates or release commitments
+- Status: design workflow agreed; milestone scope remains proposed; no delivery dates or release commitments
 - Purpose: connect current component studies to a coherent whole-product experience.
 - Platform: app versus website remains unresolved in the current project decisions.
 
@@ -36,11 +36,11 @@ This is a planning model drawn from the existing vision. Navigation, seasonal ti
 
 ## Near-term focus
 
-1. Review the whole-product journey and proposed first-release boundary before expanding the component inventory.
-2. Continue the daily selector and history studies within their existing briefs.
-3. Begin a small seasonal-art study using synthetic data so the central long-term promise is tested early.
+1. Prepare and review the screen/state map and proposed first-release boundary.
+2. Carry the established daily page and history grid into Figma; resolve the daily selector and connected states incrementally within updated feature briefs.
+3. Explore seasonal input/output decisions separately, respecting the owner's pause for reflection. After those decisions, prepare a dedicated brief and studies using synthetic data.
 
-Figma can support editable layouts, component comparisons, and a connected visual prototype. Whether to create that file remains a tooling choice; recreating screens alone does not satisfy a product milestone. Interactive behavior still needs appropriate prototype or implementation checks.
+The agreed [design workflow](../process/DESIGN_WORKFLOW.md) defines decision gates and automatic follow-through. Use Figma for editable layouts, component comparisons, and the connected visual prototype after the initial map is reviewed. Preserve established work; do not rebuild everything or wait for every future detail to be settled. Recreating screens alone does not satisfy a product milestone. Interactive behavior still needs appropriate prototype or implementation checks. Production work follows platform selection and explicit implementation authorization.
 
 ## Decisions requiring user judgment
 
