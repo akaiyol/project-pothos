@@ -4,6 +4,7 @@
 
 - [Product vision and decisions](design/APP_DESIGN.md)
 - [Tentative roadmap](design/ROADMAP.md)
+- [Personal photographs and emotional resonance](design/PHOTOGRAPH_RESONANCE.md)
 - [Daily diary](design/DAILY_DIARY.md)
 - [Daily landing](design/DAILY_LANDING.md)
 - [Diary formats](design/DIARY_FORMATS.md)

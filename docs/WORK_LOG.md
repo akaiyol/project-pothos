@@ -126,3 +126,12 @@ Review the README voice and introduction before publishing the first snapshot.
 - Proposed milestones, evidence for advancement, and early seasonal-art exploration using synthetic data; dates, release scope, navigation, and platform remain unapproved.
 - Documentation only: no production implementation or new visual verification. The public README snapshot is unchanged.
 - Next step: review the whole-product journey and first-release boundary with the owner.
+
+## 2026-10-01 — Photograph resonance direction
+
+- Recorded the owner's tentative seasonal/yearly sentiment direction, personal photographic library, accompanying personal context, and requirement that photographs reflect the user's feelings.
+- Recorded the explicit similarity-radius constraint: no forced nearest match; the no-match alternative is still undecided.
+- Separated owner-stated direction from assistant suggestions, including user-confirmed reflections, local matching, match rejection, and yearly collections.
+- Linked the decision record from the roadmap and documentation index. No daily-input requirements, production behavior, or public README content changed.
+- Checked documentation links and whitespace; no prototype or matching validation is claimed.
+- Next step: allow the owner to reflect before resolving the emotional input and fallback experience.

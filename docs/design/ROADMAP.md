@@ -44,6 +44,8 @@ Figma can support editable layouts, component comparisons, and a connected visua
 
 ## Decisions requiring user judgment
 
+The subsequent [photograph resonance discussion](PHOTOGRAPH_RESONANCE.md) records a tentative direction: personal photographs reflecting the user's feelings, with creator-authored context and a similarity radius that permits no match. Its emotional inputs, fallback, yearly output, and relationship to generated artwork remain unresolved. It refines the exploration for milestone 3 without approving implementation.
+
 - What is essential to the first usable version: should it include the full seasonal-art and collection loop, or should a limited diary pilot precede it?
 - What should connect the daily journal, history, current season, and completed artwork without adding unnecessary navigation?
 - What makes a seasonal piece feel personally connected to the saved daily colors and optional writing?
