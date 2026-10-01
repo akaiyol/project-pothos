@@ -118,3 +118,11 @@ Review the README voice and introduction before publishing the first snapshot.
 - Kept Figma's plugin-managed skills out of `.agents/skills/` to avoid duplicating or vendoring externally managed tooling.
 - Preserved repository feature briefs and design decisions as the product source of truth.
 - No Figma file or production implementation was created.
+
+## 2026-10-01 — Tentative whole-product roadmap
+
+- Added a dedicated tentative roadmap linking daily feature studies to the seasonal-art and collection vision, and linked it from the documentation index.
+- Distinguished the existing product concept from an unresolved end-to-end experience. Flagged older mood-label and interaction proposals for reconciliation with newer requirements.
+- Proposed milestones, evidence for advancement, and early seasonal-art exploration using synthetic data; dates, release scope, navigation, and platform remain unapproved.
+- Documentation only: no production implementation or new visual verification. The public README snapshot is unchanged.
+- Next step: review the whole-product journey and first-release boundary with the owner.
