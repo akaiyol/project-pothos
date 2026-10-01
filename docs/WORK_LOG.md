@@ -183,3 +183,10 @@ Review the README voice and introduction before publishing the first snapshot.
 - Inspected 144 captures across Chromium/WebKit, 320/390/430, both host appearances and 12 states including 200% text. Interaction tests passed; evidence: design/reviews/daily-direct-2026-10-01/REVIEW.md. Physical assistive technology remains unverified.
 - Exact next action: owner reviews this direct-access mockup and proposed three-month history range. Incorporate authorized feedback, then resume the screen/state map and release boundary before the connected Figma journey. Production saving remains unresolved.
 - README unchanged; unrelated daily-colour brief edits excluded.
+
+## 2026-10-01 — Record raised glass and moving stickers direction
+
+- Owner requested a modern material direction before implementation: raised rounded glass with small outer margins, slight cloudiness and no tint, with falling stickers responding to phone orientation behind it. Technology metaphor is explicitly deferred.
+- Added design/GLASS_DIARY_DIRECTION.md with confirmed intent, proposed layering, retained direct-access diary requirements, future verification criteria, unresolved choices and primary-source references. Linked it from the daily specification and documentation index.
+- Documentation only; prototype and public README unchanged. No dependencies installed, artwork chosen or platform selected. Verified the documentation diff and reference links through primary project pages; no visual verification is claimed.
+- Exact next action: owner reviews direction/reference shortlist; subsequent authorized visual study should establish material and layering, then motion. Sticker artwork and containment remain dependencies for implementation. Preserve the existing screen-map/Figma/production authorization boundaries.

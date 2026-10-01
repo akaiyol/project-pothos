@@ -12,6 +12,10 @@
 - Diary history grid: [../features/FEATURE_DIARY_HISTORY_GRID.md](../features/FEATURE_DIARY_HISTORY_GRID.md)
 - Daily color selection: [../features/FEATURE_DAILY_COLOR_SELECTION.md](../features/FEATURE_DAILY_COLOR_SELECTION.md)
 
+## Latest material direction — 2026-10-01
+
+The owner requested replacing the workbook base with raised, slightly cloudy, colourless 3D glass and orientation-responsive stickers behind it. The technology metaphor remains deliberately unresolved. See [raised glass direction](GLASS_DIARY_DIRECTION.md) for confirmed requirements, proposed layering and references. This supersedes the notebook material for the next exploration; the existing prototype is unchanged. Current scope is documentation and research before implementation.
+
 ## Current direct-access daily page — 2026-10-01
 
 The owner clarified that minimalism must preserve visible core features and avoid unnecessary clicks. History, the gradient slider and optional writing are now visible on first render. A shade selection directly updates today's sample entry; only individual-date lookup and readback sit behind Entry details. This supersedes the rejected disclosure design below. Three-month history and simulated autosave remain prototype proposals. See the [current brief](../features/FEATURE_DAILY_PAGE_REBUILD.md).
