@@ -12,6 +12,10 @@
 - Diary history grid: [../features/FEATURE_DIARY_HISTORY_GRID.md](../features/FEATURE_DIARY_HISTORY_GRID.md)
 - Daily color selection: [../features/FEATURE_DAILY_COLOR_SELECTION.md](../features/FEATURE_DAILY_COLOR_SELECTION.md)
 
+## Current daily-page prototype — 2026-10-01
+
+The owner rejected the overlapping archived page and requested a rebuild consistent with the accepted history grid. See the [rebuild brief](../features/FEATURE_DAILY_PAGE_REBUILD.md) and [interactive prototype](prototypes/daily-page.html). This focused HTML study supersedes the rejected page presentation; it does not select a production platform or finalize selector/save behavior. The current request authorizes this component revision before the broader screen map and Figma stages.
+
 ## Current V1 Interface Direction — 2026-09-19
 
 The first V1 study is a single, minimal notebook page. It intentionally excludes the proposed opening animation, page gestures, cover, library, and scrapbook navigation while the core daily interaction is being resolved.

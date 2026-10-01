@@ -14,6 +14,8 @@
 
 ## Feature briefs
 
+- [Daily page rebuild brief](features/FEATURE_DAILY_PAGE_REBUILD.md)
+- [Daily page prototype](design/prototypes/daily-page.html)
 - [Daily colour selection](features/FEATURE_DAILY_COLOR_SELECTION.md)
 - [Diary history grid](features/FEATURE_DIARY_HISTORY_GRID.md)
 

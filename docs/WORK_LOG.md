@@ -145,3 +145,13 @@ Review the README voice and introduction before publishing the first snapshot.
 - Next action: prepare a proposed screen/state map and first-release boundary for review. After that review, update the relevant briefs and move the established daily pieces into Figma without another proceed prompt.
 - Pending owner judgment: release boundary and material journey choices surfaced by the map. Seasonal emotional input, output intent, and fallback remain unresolved and retain the owner's reflection pause.
 - Public README unchanged. Existing unrelated daily-colour brief edits are outside this change.
+
+## 2026-10-01 — Rebuild the daily notebook around accepted history
+
+- Owner rejected the overlapping archived daily-page render and explicitly requested a rebuild consistent with the accepted history grid. This authorizes a focused prototype revision before the broader screen-map/Figma work.
+- Created FEATURE_DAILY_PAGE_REBUILD.md before the prototype. Preserved the white curved notebook, red margin, restrained type, optional note, and separate seven-row history grid. Continuous selector, autosave and the long history range are review proposals, not final product decisions.
+- Added the standalone in-memory prototype at docs/design/prototypes/daily-page.html; synthetic entries reset on reload, with no network or persistence. Added links from the daily diary specification and documentation index.
+- Verified 54 rendered states: nine states at 320/390/430 points on light/dark hosts, including 125% text. Inspected all six contact sheets after correcting weekday spacing and marker inset. Evidence and a repeatable browser check are in docs/design/reviews/daily-page-2026-10-01/.
+- Interaction checks passed for tap, drag, note, disclosure, keyboard ranges, debounce, exact endpoint colour, single-day history updates, editing and reload. Native accessibility and real storage remain unverified and outside prototype scope.
+- Next action: incorporate owner feedback on this concrete daily-page revision; once accepted, record the chosen details and return to the screen/state map and release boundary before the Figma connected journey. Do not ask for another proceed prompt for already-authorized corrections.
+- Public README unchanged. Unrelated daily-colour brief edits preserved and excluded from this commit.
