@@ -4,7 +4,25 @@
 
 2026-10-01. User-authorized interactive design prototype, not production implementation. Replaces the rejected overlapping daily-page study. Preserve the accepted history-grid visual language and integrate it into a coherent daily notebook page.
 
-## Minimal interaction revision — 2026-10-01
+## Direct-access correction — 2026-10-01
+
+Latest owner feedback supersedes the disclosure proposal below: minimalism must not conceal core features or add unnecessary steps. The previous review checked layout and interaction mechanics but incorrectly accepted hidden core controls.
+
+Confirmed: history remains visible near the top; the gradient slider and optional writing are visible on first render. Selecting a shade directly updates the sample entry, without opening a panel or confirming a second time. Only secondary date lookup and entry readback are disclosed. Preserve notebook styling, quotation, sample data and accessible native controls.
+
+Proposed: retain the three-month sample range and in-memory autosave. An unselected neutral thumb becomes coloured on direct interaction. Pointer release or Enter/Space can select the initial midpoint; arrow keys select normally. No durable storage or production behavior is introduced.
+
+Acceptance checklist:
+
+- [x] Initial history, shade slider and note are visible without interaction; no colour disclosure or confirmation button exists.
+- [x] Tap, drag and keyboard select directly; only today's cell updates with the exact shade, including unchanged midpoint selection.
+- [x] Secondary entry details disclose independently and show the saved colour and note; note-only drafts remain unsaved.
+- [x] Long/cleared notes, empty/sparse history, saving/saved states, focus and 200% text remain usable.
+- [x] Inspect rendered output at 320, 390 and 430 in both host appearances; verify responsive overflow and browser errors.
+
+Evidence: [direct-access rendered review](../design/reviews/daily-direct-2026-10-01/REVIEW.md).
+
+## Rejected minimal interaction revision — 2026-10-01
 
 Owner authorized the review improvements and requested minimal visible detail, with simple clicks revealing secondary information. The owner-selected notebook, shade slider and top history remain the basis. This revision supersedes the always-expanded history and slider shown below.
 

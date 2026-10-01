@@ -175,3 +175,11 @@ Review the README voice and introduction before publishing the first snapshot.
 - Physical iPhone/Safari, onscreen keyboard, VoiceOver, Switch Control and native Dynamic Type remain unverified; browser emulation does not replace them. No production platform or persistence was introduced.
 - Exact next action: incorporate owner feedback on the minimal initial view and the expanded controls. Resolve the proposed history range and confirmation boundary during this review; after acceptance, continue the screen/state map and release boundary before the connected Figma journey.
 - Public README unchanged. Pre-existing daily-colour brief edits remain outside this scoped commit.
+
+## 2026-10-01 — Restore direct access to core diary features
+
+- Owner clarified that minimalism must not hide features or require unnecessary clicks. Corrected the brief before revising the mockup. The earlier disclosure review passed rendering but missed this product requirement.
+- Restored visible top history, directly usable shade slider and optional writing. Removed colour opening and confirmation steps. Only historical date lookup/readback uses a disclosure. Preserved the notebook, quotation, native controls and expanded-note behavior.
+- Inspected 144 captures across Chromium/WebKit, 320/390/430, both host appearances and 12 states including 200% text. Interaction tests passed; evidence: design/reviews/daily-direct-2026-10-01/REVIEW.md. Physical assistive technology remains unverified.
+- Exact next action: owner reviews this direct-access mockup and proposed three-month history range. Incorporate authorized feedback, then resume the screen/state map and release boundary before the connected Figma journey. Production saving remains unresolved.
+- README unchanged; unrelated daily-colour brief edits excluded.

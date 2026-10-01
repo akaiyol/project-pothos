@@ -15,6 +15,7 @@ button:focus-visible,summary:focus-visible,select:focus-visible{outline:2px soli
 @media(prefers-color-scheme:dark){:root{--host:#20252b}.prototype-note{color:#c5cbd2}}
 @media(prefers-contrast:more){:root{--muted:#40464d}.cell[data-state=empty]{background:#c9cdd2}.cell[data-state=future]{background:#e2e5e8}.use-shade{border:1px solid #555f69}}
 @media(max-width:350px){body{padding:16px 8px 24px}.page{padding:24px 16px 22px 26px;border-radius:20px}.page:before{left:13px}h1{font-size:1.375rem}.entry{margin-top:28px}}
+.history{margin-top:22px}.history-content{padding-top:0}.chart{margin-bottom:4px}.entry-details>summary{display:flex;align-items:center;gap:8px;min-height:44px;width:fit-content;color:var(--muted);font-size:.8125rem}.entry-picker{margin-top:8px}.entry{margin-top:22px}.colour-label{display:block;font-size:.875rem;line-height:1.5;color:var(--muted);margin-bottom:4px}.colour-editor{padding:0}blockquote{margin-bottom:20px}
 </style>
 </head>
 <body>
@@ -22,25 +23,20 @@ button:focus-visible,summary:focus-visible,select:focus-visible{outline:2px soli
 <p class="prototype-note">Daily page study · Sample entries<br>Changes reset when this page is reloaded.</p>
 <main class="page">
 <header class="heading"><div><h1>19 September</h1><p class="date-meta">Saturday, 2026</p></div></header>
-<details class="history">
-<summary>History<span class="chevron" aria-hidden="true"></span></summary>
+<section class="history" aria-label="Diary history">
 <div class="history-content">
-<p class="history-caption">July–September 2026</p>
+
 <div class="chart" role="img" aria-label="Diary history, July to September. Read individual dates below."><div class="months" aria-hidden="true"></div><div class="grid" aria-hidden="true"></div></div>
-<div class="entry-picker"><label for="history-date">Date</label><span class="select-wrap"><select id="history-date"></select></span></div>
+<details class="entry-details"><summary>Entry details<span class="chevron" aria-hidden="true"></span></summary><div class="entry-picker"><label for="history-date">Date</label><span class="select-wrap"><select id="history-date"></select></span></div>
 <p class="entry-readback" aria-live="polite"></p>
-</div>
-</details>
+</details></div>
+</section>
 <div class="entry">
 <blockquote>The light changes before we notice.</blockquote>
-<details class="colour">
-<summary><span class="swatch" aria-hidden="true"></span><span class="colour-title">Choose colour</span><span class="chevron" aria-hidden="true"></span></summary>
 <div class="colour-editor">
-<label class="sr-only" for="shade">Preview shade</label><span id="shade-help" class="sr-only">Adjust the shade, then activate Use shade to keep it. Closing Choose colour or Change colour cancels the preview.</span>
-<div class="slider-wrap"><div class="shade-track" aria-hidden="true"></div><input id="shade" type="range" min="0" max="100" value="50" aria-describedby="shade-help" aria-valuetext="Muted rose, preview"></div>
-<div class="editor-actions"><button class="use-shade" type="button">Use shade</button></div>
+<label class="colour-label" for="shade">Today's colour</label><span id="shade-help" class="sr-only">Choose a shade directly with the slider. Use arrow keys to adjust, or Enter or Space to select the centre shade. Your choice updates today's entry.</span>
+<div class="slider-wrap"><div class="shade-track" aria-hidden="true"></div><input id="shade" type="range" min="0" max="100" value="50" aria-describedby="shade-help" aria-valuetext="No shade selected" style="--preview:#fff"></div>
 </div>
-</details>
 <textarea aria-label="Optional note" placeholder="A thought, a fragment, a detail…" rows="2"></textarea>
 <p class="status" role="status" aria-live="polite"></p>
 </div>
@@ -50,7 +46,7 @@ button:focus-visible,summary:focus-visible,select:focus-visible{outline:2px soli
 (()=>{'use strict';
 const $=s=>document.querySelector(s),today='2026-09-19',day=86400000,start=Date.UTC(2026,5,28),end=Date.UTC(2026,9,3),weeks=14;
 const palettes=[[242,213,138],[185,220,236],[233,154,125],[181,138,161]];
-const saved=new Map(),history=$('.history'),grid=$('.grid'),chart=$('.chart'),status=$('.status'),slider=$('#shade'),colour=$('.colour'),note=$('textarea'),datePicker=$('#history-date');
+const saved=new Map(),history=$('.history'),grid=$('.grid'),chart=$('.chart'),status=$('.status'),slider=$('#shade'),note=$('textarea'),datePicker=$('#history-date');
 let choice=null,timer;
 function observeLayout(element,callback){let frame;new ResizeObserver(()=>{cancelAnimationFrame(frame);frame=requestAnimationFrame(callback);}).observe(element);}
 const rgb=c=>`rgb(${c.join(', ')})`;
@@ -62,19 +58,17 @@ const fixture=new URLSearchParams(location.search).get('history');
 for(let t=start;t<=end;t+=day){const d=new Date(t),iso=d.toISOString().slice(0,10),m=d.getUTCMonth(),n=d.getUTCDate(),cell=document.createElement('span');cell.className='cell';cell.dataset.date=iso;cell.dataset.state=(m<6||m>8)?'outside':iso>today?'future':'empty';if(iso===today)cell.dataset.today='true';if(m>=6&&m<=8&&iso<today&&fixture!=='empty'&&(fixture!=='sparse'||n%9===0)){const p=m<8?0:2,seed=n*13+m*17,x=(seed%23)/22,depth=.92+((seed*7)%15)/100,c=palettes[p].map((v,i)=>Math.round(Math.min(255,(v+(palettes[p+1][i]-v)*x)*depth)));cell.style.background=rgb(c);cell.dataset.state='recorded';saved.set(iso,{color:c,note:''});}grid.append(cell);if(m>=6&&m<=8&&iso<=today){const option=document.createElement('option');option.value=iso;option.textContent=pretty(iso);datePicker.prepend(option);}}
 datePicker.value=today;
 function readback(){const record=saved.get(datePicker.value);$('.entry-readback').textContent=record?`${describe(record.color)}${record.note?'\n'+record.note:' · No note'}`:'No entry for this day.';}
-function fit(){if(!history.open)return;const available=chart.clientWidth,gap=3;chart.style.setProperty('--gap',gap+'px');chart.style.setProperty('--cell',((available-gap*(weeks-1))/weeks)+'px');}
+function fit(){const available=chart.clientWidth,gap=3;chart.style.setProperty('--gap',gap+'px');chart.style.setProperty('--cell',((available-gap*(weeks-1))/weeks)+'px');}
 observeLayout(chart,fit);history.addEventListener('toggle',()=>{fit();readback();});datePicker.addEventListener('change',readback);readback();
 function schedule(){clearTimeout(timer);if(choice===null){status.textContent=note.value?'Draft · Choose a colour to save':'';return;}status.textContent='Saving…';timer=setTimeout(()=>{const c=color(choice),cell=$(`[data-date="${today}"]`);cell.style.background=rgb(c);cell.dataset.state='recorded';saved.set(today,{color:c,note:note.value});status.textContent='Saved';chart.setAttribute('aria-label','Diary history, July to September. Today has a saved entry. Read individual dates below.');readback();},650);}
-function preview(){const c=color(Number(slider.value)/100);slider.style.setProperty('--preview',rgb(c));slider.setAttribute('aria-valuetext',`${describe(c)}, preview`);}
-colour.querySelector('summary').addEventListener('click',()=>{if(!colour.open){slider.value=choice===null?50:Math.round(choice*100);preview();}});
-slider.addEventListener('input',preview);
-$('.use-shade').addEventListener('click',()=>{choice=Number(slider.value)/100;colour.dataset.selected='true';$('.swatch').style.background=rgb(color(choice));$('.colour-title').textContent='Change colour';colour.open=false;colour.querySelector('summary').focus();schedule();});
+function choose(){choice=Number(slider.value)/100;const c=color(choice);slider.style.setProperty('--preview',rgb(c));slider.setAttribute('aria-valuetext',describe(c));schedule();}
+slider.addEventListener('input',choose);
+slider.addEventListener('pointerup',choose);
+slider.addEventListener('keydown',event=>{if(event.key==='Enter'||event.key===' '){event.preventDefault();choose();}});
 const measure=document.createElement('div');measure.setAttribute('aria-hidden','true');document.body.append(measure);
 function grow(){const style=getComputedStyle(note);measure.style.cssText=`position:absolute;visibility:hidden;pointer-events:none;left:0;top:0;width:${note.clientWidth}px;font:${style.font};line-height:${style.lineHeight};padding:6px 0;white-space:pre-wrap;overflow-wrap:break-word;`;measure.textContent=(note.value||note.placeholder)+'\u200b';note.style.height=Math.max(60,Math.ceil(measure.getBoundingClientRect().height)+2)+'px';}
 note.addEventListener('input',()=>{grow();schedule();});observeLayout($('.page'),grow);grow();
-// At large text sizes, put the history disclosure below the date rather than overlap it.
-function headerFit(){const heading=$('.heading'),summary=history.querySelector('summary');const needsRow=heading.firstElementChild.getBoundingClientRect().width+summary.getBoundingClientRect().width+20>heading.clientWidth;history.style.marginTop=needsRow?'12px':'-52px';summary.style.marginLeft=needsRow?'0':'auto';}
-observeLayout($('.heading'),headerFit);headerFit();preview();
+fit();
 })();
 </script>
 </body>

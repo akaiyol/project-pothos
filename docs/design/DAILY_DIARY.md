@@ -12,7 +12,11 @@
 - Diary history grid: [../features/FEATURE_DIARY_HISTORY_GRID.md](../features/FEATURE_DIARY_HISTORY_GRID.md)
 - Daily color selection: [../features/FEATURE_DAILY_COLOR_SELECTION.md](../features/FEATURE_DAILY_COLOR_SELECTION.md)
 
-## Current minimal daily page — 2026-10-01
+## Current direct-access daily page — 2026-10-01
+
+The owner clarified that minimalism must preserve visible core features and avoid unnecessary clicks. History, the gradient slider and optional writing are now visible on first render. A shade selection directly updates today's sample entry; only individual-date lookup and readback sit behind Entry details. This supersedes the rejected disclosure design below. Three-month history and simulated autosave remain prototype proposals. See the [current brief](../features/FEATURE_DAILY_PAGE_REBUILD.md).
+
+## Rejected disclosure revision — 2026-10-01
 
 The owner requested minimal visible detail with simple controls that reveal more. The current study gives the date priority; History opens the calendar and individual date readback near the top. Choose colour opens the shade slider; Use shade accepts a preview, then returns to the compact entry. Optional writing remains visible. No shade is implied before acceptance. The notebook and quotation remain unchanged. The explicit confirmation plus simulated note autosave is a review proposal, not a production decision. See the [current brief](../features/FEATURE_DAILY_PAGE_REBUILD.md).
 
