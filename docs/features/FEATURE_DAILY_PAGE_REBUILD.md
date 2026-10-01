@@ -4,6 +4,35 @@
 
 2026-10-01. User-authorized interactive design prototype, not production implementation. Replaces the rejected overlapping daily-page study. Preserve the accepted history-grid visual language and integrate it into a coherent daily notebook page.
 
+## Minimal interaction revision — 2026-10-01
+
+Owner authorized the review improvements and requested minimal visible detail, with simple clicks revealing secondary information. The owner-selected notebook, shade slider and top history remain the basis. This revision supersedes the always-expanded history and slider shown below.
+
+### Confirmed intent and proposed mechanics
+
+- Keep the date prominent and history reachable beside it. A clearly labelled History disclosure reveals the calendar inline; it begins collapsed to remove competing detail.
+- Group the quotation, colour choice and writing into one daily-entry area. No new screen, navigation, animation or decorative treatment.
+- A Choose colour disclosure reveals the single gradient slider. Opening previews the midpoint without selecting or saving it. Use shade explicitly accepts the preview and closes the control; dismissing without acceptance cancels it. This removes the ambiguous unselected midpoint and gives pointer and keyboard users the same confirmation path.
+- After acceptance, the same disclosure shows the chosen swatch and Change colour. The swatch is hidden while the editor is open, leaving one active colour control.
+- Colour acceptance triggers the existing simulated save. Subsequent note edits autosave only after a colour has been accepted. This confirmation boundary is a prototype proposal; production saving remains unapproved.
+- History reveals month labels and the seven-row grid. Season and weekday annotation are omitted to reduce clutter; exact calendar dates remain available through a labelled date picker and text description within expanded history. This adds an accessible equivalent to the visual data, without making tiny cells touch targets.
+- Stored sample records include colour and optional note in memory. Readback appears only in expanded history. No persistence or transmission; reload resets the prototype.
+- Literal colour descriptions replace raw RGB announcements; they never name emotions. Existing July–September range remains a review proposal.
+
+### Acceptance checklist
+
+- [x] Initial page clearly offers History, Choose colour and optional writing without instructions or hidden required controls.
+- [x] History and colour disclosures open and close with pointer and keyboard; hidden content has no layout footprint or focusable controls.
+- [x] Opening or cancelling colour does not create an entry. Use shade accepts the unchanged midpoint equally via pointer and keyboard.
+- [x] Preview changes do not save until accepted; latest accepted colour and note survive rapid edits in the simulated record; only today's history cell changes.
+- [x] Exact gradient/thumb/saved-cell mapping; keyboard endpoints; clearing and shrinking notes; accessible date and colour/note readback.
+- [x] Visually inspect initial, disclosures, preview, saving, saved, history readback, empty/sparse history, long/cleared note, focus and 200% text at 320/390/430 and both host appearances.
+- [x] Test touch emulation and WebKit where available; distinguish these from physical iOS/VoiceOver/Dynamic Type and onscreen keyboard verification.
+
+Native-device accessibility and real durable saving remain outside this HTML prototype. All historical checklists below describe earlier revisions only.
+
+Current evidence: [minimal-page rendered review](../design/reviews/daily-minimal-2026-10-01/REVIEW.md). All 180 captures passed visual inspection; both browser test runs passed.
+
 ## Revision — 2026-10-01
 
 Owner requested a one-dimensional gradient slider, history near the top, and a more connected composition. This supersedes the earlier two-dimensional selector study. The revised hierarchy is date → compact history → quotation → shade slider → optional note → one save status.

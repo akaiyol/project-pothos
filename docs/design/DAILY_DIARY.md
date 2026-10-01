@@ -12,7 +12,11 @@
 - Diary history grid: [../features/FEATURE_DIARY_HISTORY_GRID.md](../features/FEATURE_DIARY_HISTORY_GRID.md)
 - Daily color selection: [../features/FEATURE_DAILY_COLOR_SELECTION.md](../features/FEATURE_DAILY_COLOR_SELECTION.md)
 
-## Current slider revision — 2026-10-01
+## Current minimal daily page — 2026-10-01
+
+The owner requested minimal visible detail with simple controls that reveal more. The current study gives the date priority; History opens the calendar and individual date readback near the top. Choose colour opens the shade slider; Use shade accepts a preview, then returns to the compact entry. Optional writing remains visible. No shade is implied before acceptance. The notebook and quotation remain unchanged. The explicit confirmation plus simulated note autosave is a review proposal, not a production decision. See the [current brief](../features/FEATURE_DAILY_PAGE_REBUILD.md).
+
+## Earlier slider revision — 2026-10-01
 
 The owner selected a one-dimensional gradient slider and requested history near the top, with a more connected page composition. The current order is date, compact history, quotation, shade slider, optional writing and one quiet save status. This supersedes the two-dimensional selector and bottom-history layout below. The shorter July–September sample range remains a review proposal. See the [current brief](../features/FEATURE_DAILY_PAGE_REBUILD.md).
 
