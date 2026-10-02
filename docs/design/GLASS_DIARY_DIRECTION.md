@@ -6,8 +6,8 @@ Recorded 2026-10-01. Initially documentation and research only. Subsequent owner
 
 - Replace the simple workbook/notebook base with a modern, three-dimensional piece of glass.
 - One raised, rounded rectangular glass surface occupies most of the screen, with a small visible outer margin.
-- Glass is colourless and slightly cloudy, with a convincing sense of physical depth.
-- Stickers sit behind the glass. They fall and move in response to phone orientation.
+- Glass has a neutral, slightly cloudy base with convincing physical depth. On 2026-10-02 the owner requested subtle orientation-responsive coloured reflections; purple and blue are candidates, with the palette still open.
+- Stickers sit behind the glass. They fall and move in response to phone orientation. MVP stickers are stars only, confirmed 2026-10-02; mixed shapes and materials are a later direction.
 - The object should evoke some form of technology; the specific reference is deliberately undecided.
 - Preserve direct access to core diary features: minimalism must not hide the history, colour slider or writing behind unnecessary steps.
 
@@ -21,7 +21,7 @@ Give the diary a contemporary, tactile identity while preserving a clear daily t
 
 Back to front: quiet background → loose sticker layer → raised glass slab → sharp diary text and controls.
 
-Use a subtly rounded bevel, restrained edge highlights, background refraction and a soft separation shadow to communicate thickness. Apply light cloudiness to the background seen through the glass. Keep tint neutral; sticker colours may show through, but the glass itself has no chosen hue. Avoid heavy rainbow fringes, excessive glow or blur applied to text.
+Use a subtly rounded bevel, restrained edge highlights, background refraction and a soft separation shadow to communicate thickness. Apply light cloudiness to the background seen through the glass. Keep the base neutral; the latest direction permits faint angle-dependent coloured reflections without a permanent tint. Avoid heavy rainbow fringes, excessive glow or blur applied to text.
 
 Propose bounded sticker motion with gentle collisions and settling. Exact depth, friction, bounce, quantity and boundaries require a motion study. Flat sticker artwork moving behind a 3D-looking slab does not inherently require a full 3D physics scene.
 
@@ -44,7 +44,7 @@ Date, compact history near the top, directly usable shade slider and optional wr
 ## Open decisions
 
 - Technology/object metaphor: deliberately deferred by the owner.
-- Sticker artwork, source, count, meaning and whether users can choose it.
+- Star artwork finish, count and source. Mixed shapes/materials are later scope; user sticker selection is not an MVP requirement.
 - Whether stickers occupy the whole background or a bounded compartment behind the slab.
 - Glass thickness, cloudiness, inset and how strongly stickers remain visible through it.
 - Motion strength and whether it settles while writing.
@@ -67,4 +67,4 @@ Recommended research sequence: compare glass material references first, then stu
 
 ## Next action
 
-Owner reviews the authorized glass study. The current proposal uses original sample artwork in a lower compartment to prevent moving decoration from visually altering diary colours. Material, artwork, compartment and motion strength remain review choices; the technology metaphor is still deferred.
+Revise the existing mockup with stars only and subtle orientation-responsive glass reflections, following the updated brief. Review the material and motion before carrying the accepted composition into Figma. See [the delivery roadmap](ROADMAP.md#glass-diary-mvp-delivery-roadmap). No production implementation is authorized.

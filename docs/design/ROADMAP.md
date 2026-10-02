@@ -2,7 +2,7 @@
 
 ## Status and purpose
 
-- Updated: 2026-10-01
+- Updated: 2026-10-02
 - Status: design workflow agreed; milestone scope remains proposed; no delivery dates or release commitments
 - Purpose: connect current component studies to a coherent whole-product experience.
 - Platform: app versus website remains unresolved in the current project decisions.
@@ -17,6 +17,25 @@ Current work is concentrated on the daily notebook page, [daily color selection]
 
 The vision document also contains earlier mood-label, intensity, navigation, and animation proposals. They must be reconciled with newer color-first requirements and deferred-interaction rules before they are used as specifications.
 
+## Glass diary MVP delivery roadmap
+
+This focused track advances the current daily-page study without waiting for seasonal/photo decisions. Confirmed now: glass slate, stars behind it for MVP, orientation-responsive stars, exploration of subtle moving coloured reflections, and mockup-only work. Mixed shapes and materials are later scope. The full usable diary release boundary remains to be reviewed; “MVP stars” does not approve a production release.
+
+| Stage | Deliverable | Gate to advance |
+| --- | --- | --- |
+| 1. Refine the material mockup — current | Revise the existing daily page: stars only, clearer glass depth and subtle tilt-responsive reflection. Preserve direct history, colour selection and writing. | Owner accepts the material direction and motion feel; inspect affected states at 320/390/430 and supported appearances. Physical sensor verification remains a separate requirement. |
+| 2. Map the daily slice | A short screen/state map covering initial/empty diary, editing, saving/saved, history readback and motion/accessibility fallbacks. Identify remaining save/history decisions and the proposed first usable slice. | Owner reviews the slice boundary and resolves choices that block its connected prototype. Seasonal and mixed-material expansion do not block this daily track. |
+| 3. Move the accepted design into Figma | Editable surface, star artwork, typography and controls; connected daily states and motion annotations. Continue unresolved details incrementally rather than recreating the material experiment in full. | Connected walkthrough has no material interaction gaps; required layouts/states are reviewed. Keep the interactive mockup alongside Figma as evidence for reflection and physics behavior. Figma alone does not verify phone motion. |
+| 4. Prepare development handoff | Approved slice brief, assets, state/interaction specification, motion parameters, accessibility behavior and acceptance criteria. Assess platform/rendering feasibility and define storage/privacy boundaries. | Owner selects the platform, approves the production slice and explicitly authorizes implementation. Visual approval alone is insufficient. |
+| 5. Develop and validate the authorized slice | Build the agreed daily flow, real saving/history and material/motion behavior with supported fallbacks. Verify actual phone tilt, touch, keyboard behavior, accessibility, performance and data integrity on the selected platform. | Slice acceptance criteria pass; report any device or performance limits. Confirm the pilot/release destination before distribution. |
+| 6. Pilot and expand | Evaluate daily usability and motion comfort, fix findings, then consider mixed shapes and materials. | Evidence supports expansion and owner approves its scope; seasonal/photo features retain their separate decisions. |
+
+**When Figma begins:** after the refined material direction is accepted and the focused daily screen/state map and slice boundary are reviewed. Do not wait for the whole product to be designed. Until then the existing interactive mockup remains the material experiment.
+
+**When development begins:** after the connected Figma experience and implementation brief are ready, blocking product decisions are resolved, a platform is chosen, and production implementation is explicitly authorized. A small device feasibility experiment may be proposed during handoff; it requires separate authorization and does not establish production readiness.
+
+**Exact next action:** revise the stars-only glass mockup and review its moving reflections. Then prepare the focused daily map and advance into Figma once its gate is satisfied. No Figma file or revised visual output is created by this documentation update.
+
 ## Working whole-product journey
 
 Understand the private journal → choose a daily color and optionally write → save and revisit memories → reach a seasonal boundary → create and receive an artwork → preserve and revisit it in a collection.
@@ -28,7 +47,7 @@ This is a planning model drawn from the existing vision. Navigation, seasonal ti
 | Milestone | Intended outcome | Scope and decisions | Evidence needed before advancing |
 | --- | --- | --- | --- |
 | 1. Define the whole experience | A coherent product boundary and journey | Reconcile older proposals; map first use, daily use, revisiting, seasonal transition, artwork, and collection; distinguish first-release needs from later ideas. | A reviewed screen/state map, proposed release boundary, and explicit list of remaining decisions. |
-| 2. Resolve the daily experience | A complete, lightweight daily action | Compare selector alternatives in the notebook page; settle saving and editing behavior; decide the compact history range; define the separate full-year view and access to past entries. | Feature briefs and an interactive prototype covering empty, selected, saved, and revisited states, with required visual and accessibility checks. |
+| 2. Resolve the daily experience | A complete, lightweight daily action | Carry forward the selected direct gradient slider in the glass study; settle saving and editing behavior; decide the compact history range; define the separate full-year view and access to past entries. | Feature briefs and an interactive prototype covering empty, selected, saved, and revisited states, with required visual and accessibility checks. |
 | 3. Test the seasonal promise | Evidence that accumulated daily colors can produce meaningful artwork | Use synthetic entries to study visual direction, the relationship between saved colors and artwork, sparse seasons, seasonal timing, and input privacy. Compare generation approaches only against those needs. | Reviewed artwork studies and a documented input-to-output rationale; a decision on whether the result supports the product promise. Start these studies alongside milestone 2 to expose major risks early. |
 | 4. Connect the full journey | One understandable experience from first use through a completed season | Prototype onboarding, daily use, history, seasonal readiness, artwork creation/reveal, collection, and artwork detail. Define loading, failure/retry, no-artwork, and deletion states where applicable. | An end-to-end walkthrough using simulated time and sample data; no unexplained navigation gaps. It remains a prototype, not proof of production behavior. |
 | 5. Choose and build the first release | A usable implementation of the agreed experience | Select platform; approve release scope and feature briefs; decide storage, export/deletion, and any remote processing; implement only after explicit authorization. | Working core flows, appropriate data and failure-path checks, and platform-specific accessibility and visual verification. |

@@ -42,6 +42,10 @@ On resuming, read that handoff and the current briefs, check for newer user feed
 
 ## Current starting point
 
+2026-10-02 update: the owner selected stars only for MVP stickers and requested a mockup with moving glass reflections. The focused [glass diary delivery roadmap](../design/ROADMAP.md#glass-diary-mvp-delivery-roadmap) governs the next sequence: refined material study → reviewed daily map/slice → Figma connected prototype → platform and authorized production slice → development/device validation → pilot. The whole-product map remains useful, but unresolved seasonal decisions do not delay this focused daily track.
+
+The paragraph below records the earlier whole-product starting point; the material revision above is the immediate next action.
+
 The next design task is a proposed screen/state map and first-release boundary. No map or Figma file is created by this workflow update. Carry forward the existing daily notebook, seasonal palette studies, selector alternatives, and accepted history snapshot. The full-year calendar and seasonal/photograph/collection experience still need connected screen and state definitions.
 
 All visual work remains subject to the feature-brief workflow and rendered verification gate in [AGENTS.md](../../AGENTS.md), including every affected variant at 320, 390, and 430 points and supported appearances.

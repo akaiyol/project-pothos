@@ -201,3 +201,13 @@ Review the README voice and introduction before publishing the first snapshot.
 - Public README unchanged; unrelated daily-colour brief edits preserved outside this commit.
 
 Final localized correction: dark preview focus outline changed to light grey; all six affected dark tilted captures were regenerated and inspected in both engines. WebKit renders sticker details sharper than Chromium; material matching on a physical phone remains a follow-up.
+
+
+## 2026-10-02 — Stars-only MVP and design-to-development gates
+
+- Owner confirmed stars as the MVP sticker shape; mixed shapes and materials remain a later direction. Current authorization is mockup-only, without extra product features.
+- Recorded the requested subtle orientation-responsive glass reflection exploration. Purple/blue are candidate hues; final palette, star finish/count and motion tuning remain open.
+- Updated the glass brief and direction, and added a focused delivery roadmap: material revision, daily map/slice review, Figma connected prototype, development handoff, explicitly authorized implementation/device validation, then pilot and expansion.
+- Figma begins after acceptance of the refined material and review of the daily map/slice; production development additionally requires selected platform, ready specification, resolved blocking decisions and explicit authorization. Seasonal work does not block the daily track.
+- Documentation only; the existing mockup still uses earlier artwork. New revision criteria are unchecked. No new visual, motion or device verification is claimed; public README unchanged.
+- Exact next action: revise the existing glass mockup to stars only and add subtle tilt-responsive reflections, then inspect affected states at 320/390/430 and supported appearances. Dependencies for Figma: owner acceptance of the revised surface/motion and review of the focused daily map/slice. Dependencies for development: connected prototype, approved brief, platform/storage decisions and explicit implementation authorization.
