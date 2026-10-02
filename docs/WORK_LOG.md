@@ -190,3 +190,14 @@ Review the README voice and introduction before publishing the first snapshot.
 - Added design/GLASS_DIARY_DIRECTION.md with confirmed intent, proposed layering, retained direct-access diary requirements, future verification criteria, unresolved choices and primary-source references. Linked it from the daily specification and documentation index.
 - Documentation only; prototype and public README unchanged. No dependencies installed, artwork chosen or platform selected. Verified the documentation diff and reference links through primary project pages; no visual verification is claimed.
 - Exact next action: owner reviews direction/reference shortlist; subsequent authorized visual study should establish material and layering, then motion. Sticker artwork and containment remain dependencies for implementation. Preserve the existing screen-map/Figma/production authorization boundaries.
+
+## 2026-10-01 — Interactive raised glass diary study
+
+- Owner authorized building the glass study on the direct-access diary. Added FEATURE_GLASS_DIARY_STUDY.md before implementation; preserved the prior notebook as daily-page-notebook.html.
+- Replaced paper/red margin with raised cloudy neutral glass, sharper system typography and original sample stickers. Preserved top history, direct shade selection, writing and entry readback. Added preview tilt, drag, pause and optional sensor input outside diary controls.
+- Initial review rejected unrestricted sticker positions because they visually contaminated diary colours and text. Revised the brief and bounded motion below the save status; separated preview rows at 200% text, then regenerated captures.
+- Chromium/WebKit diary and motion checks passed: 228 captures across 320/390/430 and light/dark, including entry states, 200% text, paused/reduced motion, sensor fallback and contrast. Evidence: design/reviews/daily-glass-2026-10-01/REVIEW.md. Physical phone orientation and assistive technology remain unverified; glass is a CSS optical study rather than accurate refraction.
+- Exact next action: owner evaluates material, proposed sticker artwork/compartment and motion feel. Incorporate authorized refinements, then carry the accepted surface into the screen-map/Figma journey. Technology metaphor and production platform remain unresolved.
+- Public README unchanged; unrelated daily-colour brief edits preserved outside this commit.
+
+Final localized correction: dark preview focus outline changed to light grey; all six affected dark tilted captures were regenerated and inspected in both engines. WebKit renders sticker details sharper than Chromium; material matching on a physical phone remains a follow-up.

@@ -16,29 +16,12 @@ button:focus-visible,summary:focus-visible,select:focus-visible{outline:2px soli
 @media(prefers-contrast:more){:root{--muted:#40464d}.cell[data-state=empty]{background:#c9cdd2}.cell[data-state=future]{background:#e2e5e8}.use-shade{border:1px solid #555f69}}
 @media(max-width:350px){body{padding:16px 8px 24px}.page{padding:24px 16px 22px 26px;border-radius:20px}.page:before{left:13px}h1{font-size:1.375rem}.entry{margin-top:28px}}
 .history{margin-top:22px}.history-content{padding-top:0}.chart{margin-bottom:4px}.entry-details>summary{display:flex;align-items:center;gap:8px;min-height:44px;width:fit-content;color:var(--muted);font-size:.8125rem}.entry-picker{margin-top:8px}.entry{margin-top:22px}.colour-label{display:block;font-size:.875rem;line-height:1.5;color:var(--muted);margin-bottom:4px}.colour-editor{padding:0}blockquote{margin-bottom:20px}
-
-/* Raised glass material study: content is sharp above the optical layers. */
-:root{--ink:#202328;--muted:#505862;--host:#ccd1d6}
-body{padding:24px 12px 30px;background:radial-gradient(ellipse at 18% 0%,#f8f9fa 0,transparent 58%),linear-gradient(135deg,#dce0e4,#b8c0c8);min-height:100vh}
-.study{max-width:430px}.prototype-note{margin:0 6px 16px;font-size:.75rem;color:#505862}
-.glass-stage{position:relative;isolation:isolate;border-radius:36px;background:linear-gradient(145deg,#bfc6cd,#e5e8eb 42%,#b9c1ca);box-shadow:0 32px 48px -28px #323d4d80;overflow:visible}
-.stickers{position:absolute;inset:0;width:100%;height:100%;border-radius:36px;pointer-events:none;z-index:-1}
-.page{border:1px solid #ffffffc9;border-bottom-color:#ffffff70;border-right-color:#ffffff80;border-radius:36px;padding:30px 26px 112px;background:linear-gradient(125deg,#ffffff92,#ffffff45 34%,#ffffff62 70%,#ffffff35);backdrop-filter:blur(2.3px) saturate(.9);-webkit-backdrop-filter:blur(2.3px) saturate(.9);box-shadow:inset 2px 2px 2px #ffffffed,inset -2px -2px 2px #ffffffb0,inset 0 0 18px #ffffff6b,0 2px 1px #77818d55,0 8px 0 -3px #a9b1bba6,0 10px 1px -3px #f3f6f8b0,0 23px 30px -15px #35425270;min-height:650px}
-.page:before{inset:5px;left:5px;top:5px;bottom:5px;width:auto;border-radius:30px;background:linear-gradient(135deg,#ffffff90,transparent 26%,transparent 70%,#ffffff80);border:1px solid #ffffff65;pointer-events:none;z-index:-1;mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);mask-composite:exclude;padding:1px}
-.page:after{content:"";position:absolute;inset:0;border-radius:inherit;background:linear-gradient(118deg,#ffffff33,transparent 24%,transparent 76%,#ffffff26);pointer-events:none;z-index:-1}
-h1{font-size:1.75rem;font-weight:600;letter-spacing:-.055em}.date-meta{font-size:.8125rem;margin-top:7px}.history{margin-top:26px}.cell{border-radius:3px}.cell[data-state=empty]{background:#c9cfd5}.cell[data-state=future]{background:#dce1e5}.entry{margin-top:20px}blockquote{font-family:inherit;font-size:1rem;line-height:1.5;font-style:normal;letter-spacing:-.015em;color:#414953;max-width:260px;margin-bottom:22px}.colour-label{font-size:.875rem;font-weight:500;color:#363e47}.shade-track{height:12px;top:16px;box-shadow:inset 0 1px 2px #44444418}textarea{color:#202328}textarea::placeholder{color:#525c67}.status{color:#4b5560}select{background:#f5f7f9de}
-.preview-tools{margin:24px 6px 0;color:#424c57;font-size:.8125rem}.preview-row{display:flex;align-items:center;gap:12px;flex-wrap:wrap}.preview-row+.preview-row{margin-top:10px}.preview-row label{flex:0 0 auto}.preview-row input{flex:1;min-width:90px;accent-color:#4c5968;height:44px}.preview-row button{background:#ffffff66;border:1px solid #ffffffa0;border-radius:18px;padding:8px 13px;min-height:44px;font-size:.8125rem}.motion-help{margin:8px 0 0;line-height:1.5;color:#4e5864}.preview-row input[type=range]{appearance:auto;-webkit-appearance:auto;background:transparent;width:auto}.preview-row input[type=range]::-webkit-slider-thumb{appearance:auto;-webkit-appearance:auto;box-shadow:none;border:0}.preview-row input[type=range]::-webkit-slider-runnable-track{height:auto}.preview-row input:focus-visible{outline:2px solid #354252;outline-offset:2px}
-@media(max-width:350px){body{padding:18px 10px 24px}.page{padding:26px 22px 105px;min-height:620px;border-radius:30px}.glass-stage,.stickers{border-radius:30px}.page:before{border-radius:24px}h1{font-size:1.6rem}}
-@media(prefers-color-scheme:dark){body{background:radial-gradient(ellipse at 20% 0%,#66717d,transparent 65%),#252d37}.prototype-note,.preview-tools,.motion-help{color:#e0e5ea}.preview-row button{background:#ffffffd9;color:#27313d}.glass-stage{background:linear-gradient(145deg,#b8c1ca,#dce1e6 45%,#aab5c1)}}
-@media(prefers-reduced-transparency:reduce),(prefers-contrast:more){.page{background:#eef1f4;backdrop-filter:none;-webkit-backdrop-filter:none}.page:after{display:none}:root{--muted:#3d4651}}
-
-@media(prefers-color-scheme:dark){.preview-row input:focus-visible{outline-color:#eef3f8}}
 </style>
 </head>
 <body>
 <div class="study">
-<p class="prototype-note">Glass diary study · Sample entries<br>Changes reset when this page is reloaded.</p>
-<div class="glass-stage"><canvas class="stickers" aria-hidden="true"></canvas><main class="page">
+<p class="prototype-note">Daily page study · Sample entries<br>Changes reset when this page is reloaded.</p>
+<main class="page">
 <header class="heading"><div><h1>19 September</h1><p class="date-meta">Saturday, 2026</p></div></header>
 <section class="history" aria-label="Diary history">
 <div class="history-content">
@@ -57,12 +40,7 @@ h1{font-size:1.75rem;font-weight:600;letter-spacing:-.055em}.date-meta{font-size
 <textarea aria-label="Optional note" placeholder="A thought, a fragment, a detail…" rows="2"></textarea>
 <p class="status" role="status" aria-live="polite"></p>
 </div>
-</main></div>
-<aside class="preview-tools" aria-label="Material preview controls">
-<div class="preview-row"><label for="tilt">Preview tilt</label><input id="tilt" type="range" min="-100" max="100" value="0" aria-label="Preview tilt" aria-valuetext="Level"><button id="pause" type="button" aria-pressed="false">Pause</button></div>
-<div class="preview-row"><button id="motion" type="button">Use phone motion</button></div>
-<p class="motion-help" role="status">Drag unused glass space or adjust the tilt to move the stickers.</p>
-</aside>
+</main>
 </div>
 <script>
 (()=>{'use strict';
@@ -92,35 +70,6 @@ function grow(){const style=getComputedStyle(note);measure.style.cssText=`positi
 note.addEventListener('input',()=>{grow();schedule();});observeLayout($('.page'),grow);grow();
 fit();
 })();
-</script>
-<script>
-(()=>{'use strict';
-const canvas=document.querySelector('.stickers'),ctx=canvas.getContext('2d'),stage=document.querySelector('.glass-stage'),tilt=document.querySelector('#tilt'),pause=document.querySelector('#pause'),motion=document.querySelector('#motion'),help=document.querySelector('.motion-help');
-const reduced=matchMedia('(prefers-reduced-motion: reduce)');let paused=reduced.matches,w=0,h=0,floorTop=0,last=0,gx=0,gy=1,drag=null,sensor=false,received=false,motionTimer;
-const bodies=[{x:.22,y:.48,r:42,a:-.25,type:0},{x:.67,y:.34,r:38,a:.25,type:1},{x:.46,y:.69,r:40,a:-.38,type:2},{x:.8,y:.62,r:35,a:.55,type:3}].map(b=>({...b,nx:b.x,ny:b.y,vx:0,vy:0,spin:0}));
-function size(){const oldW=w,oldH=h;w=stage.clientWidth;h=stage.clientHeight;floorTop=document.querySelector('.status').getBoundingClientRect().bottom-stage.getBoundingClientRect().top+5;const dpr=Math.min(devicePixelRatio||1,2);canvas.width=Math.round(w*dpr);canvas.height=Math.round(h*dpr);ctx.setTransform(dpr,0,0,dpr,0,0);for(const [i,b] of bodies.entries()){b.r=Math.min(42,w*.112)*(i===1?.95:i===3?.85:1);b.x=oldW?b.x/oldW*w:b.nx*w;b.y=oldH?b.y/oldH*h:paused?h-b.r-14:floorTop+b.r+8;bound(b);}draw();}
-function bound(b){const rim=12;if(b.x<b.r+rim){b.x=b.r+rim;b.vx=Math.abs(b.vx)*.35;}if(b.x>w-b.r-rim){b.x=w-b.r-rim;b.vx=-Math.abs(b.vx)*.35;}if(b.y<floorTop+b.r){b.y=floorTop+b.r;b.vy=Math.abs(b.vy)*.3;}if(b.y>h-b.r-rim){b.y=h-b.r-rim;b.vy=-Math.abs(b.vy)*.24;b.vx*=.96;}}
-function star(r){ctx.beginPath();for(let i=0;i<8;i++){const a=i*Math.PI/4-Math.PI/2,rr=i%2?r*.34:r;const x=Math.cos(a)*rr,y=Math.sin(a)*rr;i?ctx.lineTo(x,y):ctx.moveTo(x,y);}ctx.closePath();}
-function draw(){ctx.clearRect(0,0,w,h);for(const b of bodies){ctx.save();ctx.translate(b.x,b.y);ctx.rotate(b.a);ctx.shadowColor='#34445648';ctx.shadowBlur=7;ctx.shadowOffsetY=5;ctx.lineWidth=4;ctx.strokeStyle='#f9fbff';const r=b.r;
-if(b.type===0){star(r);const g=ctx.createLinearGradient(-r,-r,r,r);[[0,'#faffff'],[.25,'#7f8b9f'],[.42,'#f8fbff'],[.51,'#657186'],[.7,'#eef4fa'],[1,'#818fa3']].forEach(([t,c])=>g.addColorStop(t,c));ctx.fillStyle=g;ctx.fill();ctx.stroke();ctx.shadowBlur=0;ctx.beginPath();ctx.moveTo(0,-r*.85);ctx.lineTo(0,r*.85);ctx.strokeStyle='#ffffffa0';ctx.lineWidth=1;ctx.stroke();}
-if(b.type===1){ctx.beginPath();ctx.arc(0,0,r,0,Math.PI*2);const g=ctx.createRadialGradient(-r*.4,-r*.5,1,0,0,r);g.addColorStop(0,'#9baaff');g.addColorStop(.55,'#536ce8');g.addColorStop(1,'#253cbd');ctx.fillStyle=g;ctx.fill();ctx.stroke();ctx.shadowBlur=0;ctx.strokeStyle='#dde5ffa0';ctx.lineWidth=1;for(const k of [.4,.64,.8]){ctx.beginPath();ctx.ellipse(0,0,r*k,r*.84,-.5,0,Math.PI*2);ctx.stroke();}}
-if(b.type===2){ctx.beginPath();ctx.ellipse(0,0,r,r*.65,0,0,Math.PI*2);ctx.fillStyle='#ff733d';ctx.fill();ctx.stroke();ctx.shadowBlur=0;ctx.strokeStyle='#65290b';ctx.lineWidth=2.5;ctx.beginPath();ctx.moveTo(-r*.45,0);ctx.lineTo(r*.45,0);ctx.moveTo(r*.15,-r*.26);ctx.lineTo(r*.45,0);ctx.lineTo(r*.15,r*.26);ctx.stroke();}
-if(b.type===3){ctx.beginPath();ctx.roundRect(-r,-r*.7,r*2,r*1.4,12);ctx.fillStyle='#c2a6ef';ctx.fill();ctx.stroke();ctx.shadowBlur=0;ctx.fillStyle='#584177';for(let i=0;i<3;i++){ctx.beginPath();ctx.arc((i-1)*r*.47,0,r*.12,0,Math.PI*2);ctx.fill();}}
-ctx.restore();}}
-function step(time){const dt=Math.min((time-last)/1000||.016,.032);last=time;if(!paused&&!document.hidden){for(const b of bodies){b.vx+=gx*750*dt;b.vy+=gy*750*dt;b.vx*=Math.pow(.985,dt*60);b.vy*=Math.pow(.993,dt*60);b.x+=b.vx*dt;b.y+=b.vy*dt;b.a+=b.vx*dt*.004;bound(b);}for(let pass=0;pass<3;pass++)for(let i=0;i<bodies.length;i++)for(let j=i+1;j<bodies.length;j++){const a=bodies[i],b=bodies[j],dx=b.x-a.x,dy=b.y-a.y,d=Math.hypot(dx,dy)||1,min=(a.r+b.r)*.83;if(d<min){const nx=dx/d,ny=dy/d,push=(min-d)/2;a.x-=nx*push;a.y-=ny*push;b.x+=nx*push;b.y+=ny*push;const v=(b.vx-a.vx)*nx+(b.vy-a.vy)*ny;if(v<0){a.vx+=v*nx*.62;a.vy+=v*ny*.62;b.vx-=v*nx*.62;b.vy-=v*ny*.62;}bound(a);bound(b);}}draw();}requestAnimationFrame(step);}
-function syncPause(){pause.textContent=paused?'Resume':'Pause';pause.setAttribute('aria-pressed',String(paused));stage.dataset.paused=String(paused);}
-pause.addEventListener('click',()=>{paused=!paused;syncPause();help.textContent=paused?'Sticker motion paused.':'Drag unused glass space or adjust the tilt to move the stickers.';});
-reduced.addEventListener('change',e=>{paused=e.matches;syncPause();});
-function preview(value){sensor=false;gx=Number(value)/100;gy=Math.sqrt(Math.max(.04,1-gx*gx));tilt.value=value;tilt.setAttribute('aria-valuetext',value==0?'Level':`${Math.abs(value)} percent ${value<0?'left':'right'}`);stage.dataset.tilt=String(value);}
-tilt.addEventListener('input',()=>preview(tilt.value));
-stage.addEventListener('pointerdown',e=>{if(e.target.closest('input,textarea,button,summary,select,details'))return;drag={x:e.clientX,id:e.pointerId};});
-window.addEventListener('pointermove',e=>{if(drag&&e.pointerId===drag.id)preview(Math.round(Math.max(-100,Math.min(100,(e.clientX-drag.x)/w*240))));});
-window.addEventListener('pointerup',()=>drag=null);window.addEventListener('pointercancel',()=>drag=null);
-window.addEventListener('deviceorientation',e=>{if(!sensor||e.gamma===null||e.beta===null)return;received=true;clearTimeout(motionTimer);gx=Math.max(-1,Math.min(1,e.gamma/45));gy=Math.max(-1,Math.min(1,e.beta/45));help.textContent='Phone motion active. Tilt your phone to move the stickers.';});
-motion.addEventListener('click',async()=>{try{if(typeof DeviceOrientationEvent==='undefined')throw Error('unavailable');if(typeof DeviceOrientationEvent.requestPermission==='function'){const result=await DeviceOrientationEvent.requestPermission();if(result!=='granted')throw Error('denied');}sensor=true;received=false;help.textContent='Waiting for phone motion…';clearTimeout(motionTimer);motionTimer=setTimeout(()=>{if(!received){sensor=false;help.textContent='Phone motion is unavailable here. Use Preview tilt.';}},1800);}catch(e){sensor=false;help.textContent=e.message==='denied'?'Motion access was not granted. Use Preview tilt.':'Phone motion is unavailable here. Use Preview tilt.';}});
-let resizeFrame;new ResizeObserver(()=>{cancelAnimationFrame(resizeFrame);resizeFrame=requestAnimationFrame(size);}).observe(stage);size();syncPause();requestAnimationFrame(step);
-})();
-
 </script>
 </body>
 </html>

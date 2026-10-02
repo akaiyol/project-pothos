@@ -15,6 +15,7 @@
 
 ## Feature briefs
 
+- [Glass diary material study](features/FEATURE_GLASS_DIARY_STUDY.md)
 - [Daily page rebuild brief](features/FEATURE_DAILY_PAGE_REBUILD.md)
 - [Daily page prototype](design/prototypes/daily-page.html)
 - [Daily colour selection](features/FEATURE_DAILY_COLOR_SELECTION.md)

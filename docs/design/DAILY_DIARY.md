@@ -12,9 +12,13 @@
 - Diary history grid: [../features/FEATURE_DIARY_HISTORY_GRID.md](../features/FEATURE_DIARY_HISTORY_GRID.md)
 - Daily color selection: [../features/FEATURE_DAILY_COLOR_SELECTION.md](../features/FEATURE_DAILY_COLOR_SELECTION.md)
 
-## Latest material direction — 2026-10-01
+## Current glass prototype — 2026-10-01
 
-The owner requested replacing the workbook base with raised, slightly cloudy, colourless 3D glass and orientation-responsive stickers behind it. The technology metaphor remains deliberately unresolved. See [raised glass direction](GLASS_DIARY_DIRECTION.md) for confirmed requirements, proposed layering and references. This supersedes the notebook material for the next exploration; the existing prototype is unchanged. Current scope is documentation and research before implementation.
+Owner authorized the glass material study based on the existing interactive daily page. The [current prototype](prototypes/daily-page.html) uses raised cloudy glass, sharp system typography and original sample stickers moving in a lower compartment behind the material. The [feature brief](../features/FEATURE_GLASS_DIARY_STUDY.md) defines proposed artwork, motion and accessibility behavior. Core diary interactions remain directly accessible. The [previous notebook version](prototypes/daily-page-notebook.html) is preserved for comparison. This is a CSS optical approximation and canvas motion study, not physically accurate refraction or production UI.
+
+## Recorded material direction — 2026-10-01
+
+The owner requested replacing the workbook base with raised, slightly cloudy, colourless 3D glass and orientation-responsive stickers behind it. The technology metaphor remains deliberately unresolved. See [raised glass direction](GLASS_DIARY_DIRECTION.md) for confirmed requirements, proposed layering and references. This supersedes the notebook material for the next exploration; the subsequent prototype authorization is recorded above.
 
 ## Current direct-access daily page — 2026-10-01
 

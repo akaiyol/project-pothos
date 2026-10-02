@@ -1,6 +1,6 @@
 # Raised glass diary direction
 
-Recorded 2026-10-01. Design direction and reference research only; no prototype or production implementation is authorized by this document. The owner requested documentation before implementation. Existing notebook prototype remains available as historical evidence.
+Recorded 2026-10-01. Initially documentation and research only. Subsequent owner authorization permits the interactive material study described in [its feature brief](../features/FEATURE_GLASS_DIARY_STUDY.md). Production implementation remains unauthorized. The previous notebook prototype is preserved as historical evidence.
 
 ## Owner-confirmed direction
 
@@ -67,4 +67,4 @@ Recommended research sequence: compare glass material references first, then stu
 
 ## Next action
 
-Owner reviews the recorded direction and reference shortlist. No visual implementation in this change. A subsequent authorized study should establish the glass material and layer arrangement using sample artwork, then test sticker motion; artwork choices and containment must be specified before dependent implementation.
+Owner reviews the authorized glass study. The current proposal uses original sample artwork in a lower compartment to prevent moving decoration from visually altering diary colours. Material, artwork, compartment and motion strength remain review choices; the technology metaphor is still deferred.
