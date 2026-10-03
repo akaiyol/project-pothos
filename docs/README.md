@@ -1,44 +1,35 @@
 # Project documentation
 
-## Product and design
+## Current product direction
 
-- [Product vision and decisions](design/APP_DESIGN.md)
-- [Tentative roadmap](design/ROADMAP.md)
-- [Personal photographs and emotional resonance](design/PHOTOGRAPH_RESONANCE.md)
-- [Raised glass diary direction](design/GLASS_DIARY_DIRECTION.md)
-- [Daily diary](design/DAILY_DIARY.md)
-- [Daily landing](design/DAILY_LANDING.md)
-- [Diary formats](design/DIARY_FORMATS.md)
-- [Colour input](design/MOOD_INPUT.md)
-- [Seasonal palettes](design/SEASONAL_PALETTES.md)
-- [Ideas](design/IDEAS.md)
+- [Seasonal ecosystem vision](design/APP_DESIGN.md)
+- [Ecosystem feature brief](features/FEATURE_SEASONAL_ECOSYSTEM.md)
+- [Design roadmap](design/ROADMAP.md)
+- [Daily contribution screen](design/DAILY_DIARY.md)
+- [Colour input and sentiment boundaries](design/MOOD_INPUT.md)
+- [Seasonal colour and foliage](design/SEASONAL_PALETTES.md)
+- [Glass material direction](design/GLASS_DIARY_DIRECTION.md)
+- [Active design questions](design/IDEAS.md)
 
-## Feature briefs
+## Direction history and previous studies
 
-- [Glass diary material study](features/FEATURE_GLASS_DIARY_STUDY.md)
-- [Figma Version 1 material refinement](features/FEATURE_FIGMA_V1_MATERIAL.md)
-- [Daily page rebuild brief](features/FEATURE_DAILY_PAGE_REBUILD.md)
-- [Daily page prototype](design/prototypes/daily-page.html)
-- [Daily colour selection](features/FEATURE_DAILY_COLOR_SELECTION.md)
-- [Diary history grid](features/FEATURE_DIARY_HISTORY_GRID.md)
+- [Direction timeline](design/DIRECTION_TIMELINE.md)
+- [Pre-pivot design archive](design/archive/2026-10-03/APP_DESIGN.md)
+- [Earlier colour-selection brief](features/FEATURE_DAILY_COLOR_SELECTION.md): historical comparison scope; current alternatives and semantics are governed by the ecosystem brief. Local pre-existing edits remain preserved.
+- [Earlier contribution-history brief](features/FEATURE_DIARY_HISTORY_GRID.md)
+- [Earlier daily-page brief](features/FEATURE_DAILY_PAGE_REBUILD.md)
+- [Earlier glass material study](features/FEATURE_GLASS_DIARY_STUDY.md)
+- [Figma Version 1 material study](features/FEATURE_FIGMA_V1_MATERIAL.md)
+- [Earlier daily prototype](design/prototypes/daily-page.html)
 
-## Project workflow
+Earlier prototypes and reviews remain evidence of their original scope; none verifies the ecosystem concept.
 
-- [Design decisions and automatic next steps](process/DESIGN_WORKFLOW.md)
-- [Work log](WORK_LOG.md)
-- [README guidelines](process/README_GUIDELINES.md)
+## Workflow and repository layout
+
+- [Design workflow and decision gates](process/DESIGN_WORKFLOW.md)
+- [Work log and exact next action](WORK_LOG.md)
+- [Public README guidelines](process/README_GUIDELINES.md)
 - [Skill inventory](process/SKILLS.md)
 - [Repository instructions](../AGENTS.md)
 
-## Repository layout
-
-- `docs/design/`: design direction, interaction studies, and open questions.
-- `docs/features/`: focused feature briefs and acceptance criteria.
-- `docs/process/`: editorial guidelines and development-support inventory.
-- `docs/WORK_LOG.md`: chronological progress and direction changes.
-- `.agents/skills/`: project-scoped agent skills; retain this path for discovery.
-- `assets/`: reviewed public media when available. Currently empty and therefore not tracked by Git.
-- Root `README.md`: concise visitor-facing presentation.
-- Root `AGENTS.md`: repository-wide instructions; retain at the root for discovery.
-
-The platform remains undecided. Add source code, tests, and build configuration when implementation begins and the platform is selected. Do not create an empty app scaffold or treat existing iOS studies as a platform commitment.
+Design direction belongs in `docs/design/`, briefs in `docs/features/`, process guidance in `docs/process/`, and progress in `docs/WORK_LOG.md`. Dated superseded specifications belong in `docs/design/archive/`. Project skills remain in `.agents/skills/`. Root README remains visitor-facing. Platform is unresolved; no production scaffold is introduced.

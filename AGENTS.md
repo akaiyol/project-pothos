@@ -113,20 +113,17 @@ For interactive mockups, verify all of the following:
 
 ## App-Specific Design Model
 
-Unless the user revises these decisions, use the following baseline:
+Current baseline revised by the owner on 2026-10-03: follow [docs/design/APP_DESIGN.md](docs/design/APP_DESIGN.md) and [docs/features/FEATURE_SEASONAL_ECOSYSTEM.md](docs/features/FEATURE_SEASONAL_ECOSYSTEM.md).
 
-- The daily page is a minimal white notebook page with softly curved edges.
-- Use one simple red margin line and no horizontal ruled-paper lines.
-- Use SF Pro for dates, metadata, controls, and writing.
-- Use Baskerville Italic as the restrained accent face for quotations and limited secondary text.
-- Keep typography small but legible. Do not use very thin weights to simulate delicacy.
-- The exact color selector is unresolved. Prototype alternatives separately.
-- Do not show poetic color endpoint names or translate a selected color into mood words.
-- The optional note has no visible label; its placeholder is “A thought, a fragment, a detail…” until revised.
-- Location, if present, is optional city-level metadata beside the date. It is not a required field and must not make the emotional prompt sound geographic.
-- “Where are you today?” is not an approved prompt.
-- Do not use the full-width “Keep this moment” button.
-- Book-opening animation, page-turn gestures, covers, and library navigation remain deferred ideas.
+- The product is a seasonal ecosystem with glassmorphism and a nature/cyber clash, moving away from a traditional diary shell.
+- Retain daily colour selection, contribution history, and thoughts/feelings input. A richer thoughts interaction is deferred for later ideation.
+- Rim wheel, 2D colour field, and two-colour gradient are unresolved alternatives; compare separately.
+- One contribution corresponds to one cluster of leaves. Screen two is a seasonal tree using recorded colours for leaves/flowers.
+- Bugs/simple emotions, animals/complex emotions, sentiment patterns/graph, visitor catalogue, and a 5% shiny colour variant are concept goals whose detailed rules remain unresolved.
+- Obsidian-like glass trunk/branches are proposed, not approved material output.
+- Do not infer fixed emotion from chosen colour or overwrite it with sentiment analysis.
+- Earlier notebook styling, seasonal artwork/scrapbook, photograph matching, and stars-only MVP are superseded active directions. Existing prototypes remain historical studies.
+- No replacement prompt, navigation, animation, production algorithm, or platform is approved by the direction change.
 
 ## Diary History Grid
 
@@ -141,7 +138,7 @@ The contribution-style diary grid is separate from the color selector.
 - Color represents the user’s selected daily color, not contribution intensity.
 - Do not add streak counts, scores, completion language, or “less/more” legends.
 - The full-year calendar is a separate screen with 12 compact month grids in a 3-by-4 or 4-by-3 arrangement.
-- Seasonal shifts should emerge from the saved daily colors, not from a decorative overlay.
+- Seasonal shifts in history emerge from saved daily colours. The separate ecosystem view uses seasonal sections and contribution-derived foliage per its current brief.
 
 ## Review Report
 

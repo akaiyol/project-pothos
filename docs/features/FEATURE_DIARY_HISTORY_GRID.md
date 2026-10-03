@@ -1,3 +1,5 @@
+> Historical brief as of 2026-10-03. Retained component/material evidence; conflicting requirements are superseded by the [seasonal ecosystem brief](FEATURE_SEASONAL_ECOSYSTEM.md). Existing visual approvals apply only to the earlier study.
+
 # Feature Brief: Diary History Grid
 
 ## Document Status

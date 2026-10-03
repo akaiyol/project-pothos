@@ -223,6 +223,15 @@ Final localized correction: dark preview focus outline changed to light grey; al
 - README unchanged; unrelated daily-colour brief changes preserved.
 
 
+## 2026-10-03 — Seasonal ecosystem direction pivot
+
+- Owner moved the product away from a traditional diary toward seasons, glassmorphism, and a nature/cyber clash. Retained daily colour/history/thoughts and recorded one contribution → one leaf cluster, four seasonal tree sections, sentiment graph/patterns, bugs/simple emotions, animals/complex emotions, visitor catalogue, and the requested 5% shiny colour variant.
+- Recorded rim wheel/2D field/two-colour gradient as alternatives; richer thoughts input remains later ideation. Obsidian-like trunk/branches, creature associations, and five happy days are candidates, not settled visual or algorithm rules.
+- Replaced active vision/roadmap and related design guidance. Archived pre-pivot design specifications; added DIRECTION_TIMELINE.md and FEATURE_SEASONAL_ECOSYSTEM.md. Prior briefs/prototypes/reviews remain historical evidence. Updated repository baseline and workflow to prevent obsolete diary/artwork requirements from governing new work.
+- Documentation only. No mockup, Figma, algorithm or production changes; no new visual validation. Root public README unchanged. Unrelated colour-selection and concurrent Figma material/review edits preserved and excluded from this change.
+- Exact next action: prepare a proposed screen/state map for daily contribution, seasonal tree and visitor catalogue. Dependencies for dependent visual studies: owner review of scope/save boundary, season/year organization, sentiment evidence source, graph/catalogue placement and scoped visual authorization. Algorithm work additionally needs taxonomy, confidence/window/gap rules, visit lifecycle, shiny roll semantics and privacy decisions. Production requires platform selection and explicit authorization.
+
+
 ## 2026-10-03 — Simplify Version 1 background and restrict diary palette
 
 - Owner rejected reflective glass as silk-like; glass work deferred. Updated the focused brief before editing Figma to a light blue–white gradient, removing reflection and bevel effects.
