@@ -221,3 +221,11 @@ Final localized correction: dark preview focus outline changed to light grey; al
 - Static appearance only: small existing labels remain; no interaction, responsive runtime, sensor or native accessibility verification. This focused Figma authorization does not approve production development or unresolved UX.
 - Exact next action: owner evaluates glass appearance and diary palette in the open Figma connector; incorporate their next scoped visual feedback. No additional UX decision is required for this material pass.
 - README unchanged; unrelated daily-colour brief changes preserved.
+
+
+## 2026-10-03 — Simplify Version 1 background and restrict diary palette
+
+- Owner rejected reflective glass as silk-like; glass work deferred. Updated the focused brief before editing Figma to a light blue–white gradient, removing reflection and bevel effects.
+- Interpreted the requested diary palette restriction as history cells using only colours available in the colour wheel. Sampled the current wheel gradient for every cell; no unrelated palette or independent darkening.
+- Inspected updated six static fixtures at 320/390/430 against light/dark surroundings. Evidence: design/reviews/figma-v1-material-2026-10-03/simple-gradient-widths.png. Existing small-label limitation remains; no UX or interaction verification claimed. Removed temporary fixtures.
+- Exact next action: owner reviews the simple gradient and wheel-matched history colours. Further glass work and complex UX stay deferred pending owner direction. README and unrelated edits unchanged.
