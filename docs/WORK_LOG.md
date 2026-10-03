@@ -211,3 +211,13 @@ Final localized correction: dark preview focus outline changed to light grey; al
 - Figma begins after acceptance of the refined material and review of the daily map/slice; production development additionally requires selected platform, ready specification, resolved blocking decisions and explicit authorization. Seasonal work does not block the daily track.
 - Documentation only; the existing mockup still uses earlier artwork. New revision criteria are unchecked. No new visual, motion or device verification is claimed; public README unchanged.
 - Exact next action: revise the existing glass mockup to stars only and add subtle tilt-responsive reflections, then inspect affected states at 320/390/430 and supported appearances. Dependencies for Figma: owner acceptance of the revised surface/motion and review of the focused daily map/slice. Dependencies for development: connected prototype, approved brief, platform/storage decisions and explicit implementation authorization.
+
+
+## 2026-10-03 — Figma Version 1 glass and diary palette
+
+- Owner requested a simple clean/cyber glass mockup: grey, slight blue, shine and white highlights; varied random diary colours matching the original graph. Complex UX explicitly deferred.
+- Added FEATURE_FIGMA_V1_MATERIAL.md before editing the existing Figma file XAcSMlGq99YjRtf7In3Xna. Changed background 1:2, added reflection 25:2/25:3 and recoloured 182 cells. Preserved original layout, wheel and copy; no new product features.
+- Inspected six static width fixtures at 320/390/430 against light/dark surroundings after adding the reflective sheen. Evidence: design/reviews/figma-v1-material-2026-10-03/REVIEW.md and static-widths.png. Removed temporary fixtures and focused the original glass background.
+- Static appearance only: small existing labels remain; no interaction, responsive runtime, sensor or native accessibility verification. This focused Figma authorization does not approve production development or unresolved UX.
+- Exact next action: owner evaluates glass appearance and diary palette in the open Figma connector; incorporate their next scoped visual feedback. No additional UX decision is required for this material pass.
+- README unchanged; unrelated daily-colour brief changes preserved.
